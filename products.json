@@ -1,5 +1,25 @@
 [
   {
+    "id": 1789307003177,
+    "name": "New Product",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/custom-1789307049562-0.jpg",
+    "category": "Car Accessories",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "Inte",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true
+  },
+  {
     "id": 1789306820589,
     "name": "Headlight lens Toyota Premio 260 ",
     "price": 2999,
