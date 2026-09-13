@@ -18,7 +18,12 @@
   "appearance": {
     "background": "assets/background-customcarz.jpg"
   },
-  "websiteSections": {},
+  "websiteSections": {
+    "gallery": {
+      "title": "Happy client 😊 Our work 💦 ",
+      "subtitle": " What we do best"
+    }
+  },
   "gallery": [
     {
       "title": "Bi-Led  Headlight projector ",
@@ -26,5 +31,10 @@
     }
   ],
   "reviews": [],
-  "categoryImages": {}
+  "categoryImages": {},
+  "services": [],
+  "whyItems": [],
+  "textOverrides": {
+    "footerRights": "@customcarzautocare.co.ke "
+  }
 }
