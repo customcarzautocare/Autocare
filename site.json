@@ -1,5 +1,25 @@
 {
   "categories": [],
   "subcategories": [],
-  "makes": []
+  "makes": [],
+  "links": {
+    "phone": "tel:+254757555691",
+    "whatsapp": "https://wa.me/254757555691",
+    "instagram": "https://www.instagram.com/customcarz_auto_care",
+    "facebook": "https://www.facebook.com/share/1DUPKEXg7r/",
+    "tiktok": "https://www.tiktok.com/@customcarz_autocare",
+    "x": "https://x.com/Customcarz_auto",
+    "youtube": "https://youtube.com/@customcarz_autocare",
+    "pinterest": "https://pin.it/2uvGuxdXZ",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&query_place_id=ChIJVcPNdzkRLxgRoTHjJdsqs8c",
+    "jiji": "https://jiji.co.ke/kilimani/car-parts-and-accessories/toyota-premio-265-taillight-lens-yyFXAHOauBWqof6if9IDaQAm.html",
+    "email": "mailto:customcarzautocare@gmail.com"
+  },
+  "appearance": {
+    "background": "assets/background-customcarz.jpg"
+  },
+  "websiteSections": {},
+  "gallery": [],
+  "reviews": [],
+  "categoryImages": {}
 }
