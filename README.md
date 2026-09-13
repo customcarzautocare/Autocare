@@ -1,23 +1,22 @@
-# Customcarz Auto Care — Production Rebuild v6
+# Customcarz Auto Care — v9
 
-## Included
-- Responsive customer website (`index.html`)
-- GitHub-backed admin panel (`admin.html`)
-- Live `site.json` and `products.json` refresh with cache busting
-- Full-page photographic background and category-image fallbacks
-- Category browser modal that opens matching products directly
-- Featured / Must Have / Best Selling / New Arrivals sections showing 4 first, with View all
-- Mission, Vision and Why Choose Us sections
-- Google rating/reviews section linked to the verified Customcarz Google Business Profile
-- Exact Font Awesome Free brand paths for TikTok, YouTube, Pinterest, Instagram, Facebook, X and WhatsApp
-- Vertical floating contact/social buttons
-- Google Maps Place ID link for the Customcarz location
-- Admin controls for mission, vision, reviews, social links and background contrast/saturation/brightness/overlay
+Production package for Customcarz Auto Care, Nairobi CBD.
 
-## Important deployment
-Upload the **entire ZIP contents**, including the `assets/` folder, `site.json`, `products.json`, `robots.txt`, `sitemap.xml`, `CNAME`, `index.html`, and `admin.html`.
+## v9 admin improvements
+- Loads the current `products.json` from GitHub so existing products can be edited.
+- Product search makes existing products easy to find and edit.
+- Every product field is editable: name, prices, stock, category, subcategory, make, model, year, fitment, warranty, description, image path and collection flags.
+- Product photo uploads are resized in the browser, uploaded to `assets/products/`, verified on GitHub, then the product JSON is updated.
+- Gallery, category and background uploads use the same safer image-upload process.
+- Full classic Website Content editor for headings, subtitles and button labels.
+- Service editor now includes every service title and description.
+- Why Customcarz editor now includes every benefit title and description.
+- Additional visible website labels can also be edited.
+- Business information, social links, appearance, categories, makes, gallery, reviews and media remain editable.
+- Customer site continues to load live `site.json` and `products.json` with cache-busting.
 
-The customer page also contains visual fallbacks for category images, but the supplied background and gallery assets should still be uploaded for best performance and for future admin edits.
+## GitHub Pages
+Deploy the entire repository to the `main` branch/root (or keep the existing GitHub Actions Pages deployment). Do not upload only `index.html` or `admin.html`; the JSON files and `assets/` directory are required.
 
-## Google reviews
-The Customcarz Google Business Profile currently verifies a 5.0-star rating and 20 reviews. Exact review text is not fabricated in this build. The Admin → Gallery / Reviews section accepts the exact customer name and exact Google review text so genuine testimonials can be displayed without inventing wording.
+## Admin connection
+Open `admin.html`, enter the repository and a GitHub fine-grained token with repository Contents read/write access, then press **CONNECT & LOAD**.
