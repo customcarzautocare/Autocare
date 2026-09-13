@@ -1,22 +1,22 @@
 [
   {
     "id": 1789306820589,
-    "name": "New Product",
-    "price": 0,
-    "oldPrice": 0,
-    "stock": 0,
+    "name": "Headlight lens Toyota Premio 260 ",
+    "price": 2999,
+    "oldPrice": 3500,
+    "stock": 20,
     "image": "assets/products/custom-1789306843004-0.jpg",
-    "category": "Car Accessories",
-    "subcat": "",
-    "make": "Universal",
-    "model": "All",
-    "year": "All",
-    "description": "",
-    "fitment": "",
-    "warranty": "",
+    "category": "Lenses ",
+    "subcat": "Headlight lens ",
+    "make": "Toyota ",
+    "model": "Premio 260 ",
+    "year": " All",
+    "description": "Headlight lens Toyota Premio 260",
+    "fitment": "Toyota Premio 260",
+    "warranty": "7 years ",
     "featured": false,
-    "bestSelling": false,
+    "bestSelling": true,
     "mustHave": false,
-    "newArrival": true
+    "newArrival": false
   }
 ]
