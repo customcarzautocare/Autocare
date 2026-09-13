@@ -19,7 +19,12 @@
     "background": "assets/background-customcarz.jpg"
   },
   "websiteSections": {},
-  "gallery": [],
+  "gallery": [
+    {
+      "title": "New gallery photo",
+      "image": "assets/gallery/custom-1789307554201-0.jpg"
+    }
+  ],
   "reviews": [],
   "categoryImages": {}
 }
