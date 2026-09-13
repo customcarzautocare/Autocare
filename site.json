@@ -202,7 +202,7 @@
     "background": "assets/background-customcarz.jpg",
     "backgroundPosition": "center top",
     "backgroundSize": "100% auto",
-    "overlayOpacity": 0.8,
+    "overlayOpacity": 0.7,
     "contrast": 5,
     "saturation": 2.35,
     "brightness": 2
@@ -231,7 +231,7 @@
     "Infor": "assets/category/android-electronics.jpg",
     "Infort": "assets/category/android-electronics.jpg",
     "Inforta": "assets/category/android-electronics.jpg",
-    "Infotainment": "",
+    "Infotainment": "assets/category/infotainment-1789318910686.jpg",
     "Infotainment ": "assets/category/android-electronics.jpg",
     "Int": "assets/category/android-electronics.jpg",
     "Interior": "assets/category/android-electronics.jpg",
