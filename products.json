@@ -1,5 +1,25 @@
 [
   {
+    "id": 1789309310981,
+    "name": "New Product",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/customcarz-1789309332089-0.jpg",
+    "category": "Car Accessories",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "Bi led headlight projector ",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true
+  },
+  {
     "id": 1789307121137,
     "name": "Executive NPC Nappa leather seat covers ",
     "price": 18000,
