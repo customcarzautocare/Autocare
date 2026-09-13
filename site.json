@@ -1,33 +1,147 @@
 {
-  "categories": [],
-  "subcategories": [],
-  "makes": [],
-  "links": {
-    "phone": "tel:+254757555691",
-    "whatsapp": "https://wa.me/254757555691",
-    "instagram": "https://www.instagram.com/customcarz_auto_care",
-    "facebook": "https://www.facebook.com/share/1DUPKEXg7r/",
-    "tiktok": "https://www.tiktok.com/@customcarz_autocare",
-    "x": "https://x.com/Customcarz_auto",
-    "youtube": "https://youtube.com/@customcarz_autocare",
-    "pinterest": "https://pin.it/2uvGuxdXZ",
-    "maps": "https://www.google.com/maps/search/?api=1&query=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&query_place_id=ChIJVcPNdzkRLxgRoTHjJdsqs8c",
-    "jiji": "https://jiji.co.ke/kilimani/car-parts-and-accessories/toyota-premio-265-taillight-lens-yyFXAHOauBWqof6if9IDaQAm.html",
-    "email": "mailto:customcarzautocare@gmail.com"
-  },
-  "appearance": {
-    "background": "assets/background-customcarz.jpg",
-    "overlayOpacity": 0.8,
-    "contrast": 5,
-    "saturation": 2.35,
-    "brightness": 2
-  },
+  "bizName": "Customcarz Auto Care",
+  "tagline": "Nairobi's one-stop shop for car accessories, body parts and lighting",
+  "description": "Customcarz Auto Care has served car owners, mechanics, garages and dealers from Nairobi CBD since 2020, stocking new imports from China and genuine ex-Japan spare parts, with installation services in tinting, wraps, lighting and vehicle electronics.",
+  "vision": "To be one of Kenya’s most trusted destinations for car accessories, spare parts, styling, lighting and vehicle technology.",
+  "phone": "0757555691",
+  "email": "customcarzautocare@gmail.com",
+  "location": "Shell, Kirinyaga Road, Nairobi CBD",
+  "hours": "Open daily from 7:00 AM",
+  "till": "3111732",
+  "googleBusiness": "https://www.google.com/maps/dir/?api=1&destination=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&travelmode=driving",
+  "categories": [
+    "Car Accessories",
+    "Body Parts",
+    "Lighting Parts",
+    "Car Tinting",
+    "Wraps & PPF",
+    "Security & Alarms",
+    "Android Radios & Electronics"
+  ],
+  "subcategories": [
+    "Harrier Grille Security Enforcement",
+    "Chameleon Tint",
+    "3M Tint",
+    "Llumar Tint",
+    "Ceramic Tint",
+    "Headlight Projectors",
+    "DRL Customisation",
+    "Car Wraps",
+    "Paint Protection Film (PPF)",
+    "Android Radios",
+    "Car Alarms",
+    "GPS Trackers",
+    "Dashcams",
+    "LED Badge Lighting"
+  ],
+  "makes": [
+    "Toyota",
+    "Nissan",
+    "Honda",
+    "Mazda",
+    "Subaru",
+    "Mercedes-Benz",
+    "BMW",
+    "Audi",
+    "Volkswagen",
+    "Ford",
+    "Hyundai",
+    "Lexus"
+  ],
   "websiteSections": {
+    "hero": {
+      "title": "Upgrade Your Drive. Define Your Car.",
+      "subtitle": "Premium car accessories, body parts, lighting, electronics and professional styling — all from Customcarz Auto Care, Nairobi.",
+      "shopButton": "Jiji store"
+    },
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Our hand-picked products available now."
+    },
+    "bestSelling": {
+      "title": "Best Selling",
+      "subtitle": "Popular products customers ask for most."
+    },
+    "mustHave": {
+      "title": "Must Have",
+      "subtitle": "Smart upgrades for your vehicle."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Professional installation and customisation, done in-house."
+    },
+    "why": {
+      "title": "Why Customcarz",
+      "subtitle": "5.0★ on Google from 20+ reviews — trusted by owners, mechanics, garages and dealers."
+    },
     "gallery": {
       "title": "Happy client 😊 Our work 💦 ",
       "subtitle": " What we do best"
+    },
+    "reviews": {
+      "title": "Reviews",
+      "subtitle": "What customers say about Customcarz."
+    },
+    "contact": {
+      "title": "Visit & Contact",
+      "subtitle": "Shell, Kirinyaga Road, Nairobi CBD."
+    },
+    "header": {
+      "contact": "0757555691 "
     }
   },
+  "services": [
+    {
+      "title": "Harrier Grille Security Enforcement",
+      "text": "Reinforced grille security installation for added protection."
+    },
+    {
+      "title": "Car Tinting",
+      "text": "Chameleon, 3M, Llumar and Ceramic tint options fitted in-house."
+    },
+    {
+      "title": "Headlight Projector & DRL Installation",
+      "text": "Upgrade and customise your headlights and daytime running lights."
+    },
+    {
+      "title": "Wrap & PPF Installation",
+      "text": "Change your car's look or protect its paintwork with wraps and paint protection film."
+    },
+    {
+      "title": "Android Radio Installation",
+      "text": "Infotainment upgrades fitted and set up for you."
+    },
+    {
+      "title": "Alarm, Tracker & Dashcam Installation",
+      "text": "Car alarms, GPS trackers and dashcams installed for security and peace of mind."
+    }
+  ],
+  "whyItems": [
+    {
+      "title": "Google-rated trust",
+      "text": "5.0★ Google rating from 20 reviews, verified on the Customcarz business profile."
+    },
+    {
+      "title": "Fitment-focused",
+      "text": "We help customers match parts and upgrades to the right vehicle make, model and year."
+    },
+    {
+      "title": "Quality sourcing",
+      "text": "A practical mix of new imports and genuine ex-Japan spare parts."
+    },
+    {
+      "title": "Installation support",
+      "text": "Tinting, wraps, lighting, electronics and security upgrades can be fitted professionally."
+    },
+    {
+      "title": "Nairobi CBD location",
+      "text": "Easy to find at Shell along Kirinyaga Road, with direct phone and WhatsApp support."
+    },
+    {
+      "title": "Delivery options",
+      "text": "Same-day Nairobi delivery and countrywide courier options are available; confirm current terms with us."
+    }
+  ],
   "gallery": [
     {
       "title": "Bi-Led  Headlight projector ",
@@ -60,10 +174,41 @@
       "text": "Customcarz Auto Care is an amazing place for wholesalers igot car mats, seat covers, car covers and many more accessories for my shop. "
     }
   ],
-  "categoryImages": {},
-  "services": [],
-  "whyItems": [],
+  "links": {
+    "phone": "tel:+254757555691",
+    "whatsapp": "https://wa.me/254757555691",
+    "instagram": "https://www.instagram.com/customcarz_auto_care",
+    "facebook": "https://www.facebook.com/share/1DUPKEXg7r/",
+    "tiktok": "https://www.tiktok.com/@customcarz_autocare",
+    "x": "https://x.com/Customcarz_auto",
+    "youtube": "https://youtube.com/@customcarz_autocare",
+    "pinterest": "https://pin.it/2uvGuxdXZ",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&query_place_id=ChIJVcPNdzkRLxgRoTHjJdsqs8c",
+    "jiji": "https://jiji.co.ke/kilimani/car-parts-and-accessories/toyota-premio-265-taillight-lens-yyFXAHOauBWqof6if9IDaQAm.html",
+    "email": "mailto:customcarzautocare@gmail.com"
+  },
+  "appearance": {
+    "background": "assets/background-customcarz.jpg",
+    "backgroundPosition": "center top",
+    "backgroundSize": "100% auto",
+    "overlayOpacity": 0.8,
+    "contrast": 5,
+    "saturation": 2.35,
+    "brightness": 2
+  },
   "textOverrides": {
     "footerRights": "@customcarzautocare.co.ke "
-  }
+  },
+  "categoryImages": {
+    "Car Accessories": "assets/category/car-accessories.jpg",
+    "Body Parts": "assets/category/body-parts.jpg",
+    "Lighting Parts": "assets/category/lighting-parts.jpg",
+    "Car Tinting": "assets/category/car-tinting.jpg",
+    "Wraps & PPF": "assets/category/wraps-ppf.jpg",
+    "Security & Alarms": "assets/category/security-alarms.jpg",
+    "Android Radios & Electronics": "assets/category/android-electronics.jpg"
+  },
+  "placeId": "ChIJVcPNdzkRLxgRoTHjJdsqs8c",
+  "googleReviewsUrl": "https://www.google.com/maps/search/?api=1&query=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&query_place_id=ChIJVcPNdzkRLxgRoTHjJdsqs8c",
+  "mission": "To make quality vehicle upgrades, accessories, spare parts and professional installation easier to find, buy and enjoy for car owners across Kenya."
 }
