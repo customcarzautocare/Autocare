@@ -54,7 +54,12 @@
       "image": "assets/gallery/custom-1789310074429-5.jpg"
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "name": "Automobile hub",
+      "text": "Customcarz Auto Care is an amazing place for wholesalers igot car mats, seat covers, car covers and many more accessories for my shop. "
+    }
+  ],
   "categoryImages": {},
   "services": [],
   "whyItems": [],
