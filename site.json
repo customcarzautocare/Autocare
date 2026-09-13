@@ -16,7 +16,11 @@
     "email": "mailto:customcarzautocare@gmail.com"
   },
   "appearance": {
-    "background": "assets/background-customcarz.jpg"
+    "background": "assets/background-customcarz.jpg",
+    "overlayOpacity": 0.8,
+    "contrast": 5,
+    "saturation": 2.35,
+    "brightness": 2
   },
   "websiteSections": {
     "gallery": {
