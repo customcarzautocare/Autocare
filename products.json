@@ -16,7 +16,7 @@
     "warranty": "4 years ",
     "featured": false,
     "bestSelling": false,
-    "mustHave": false
+    "mustHave": true
   },
   {
     "id": 1787976753640,
@@ -24,7 +24,7 @@
     "price": 4000,
     "oldPrice": 5000,
     "stock": 12,
-    "image": "assets/products/1787976772540-1001216999.jpg",
+    "image": "assets/products/customcarz-1789314066531-1.jpg",
     "category": "Exterior accessories ",
     "subcat": "Bodykits ",
     "make": "All",
