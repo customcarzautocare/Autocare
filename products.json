@@ -1,5 +1,24 @@
 [
   {
+    "id": 1789319010865,
+    "name": "Car sticker ",
+    "price": 900,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/custom-1789319021362-0.jpg",
+    "category": "Car Accessories",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false
+  },
+  {
     "id": 1789314155096,
     "name": "Original ex Japan side mirror ",
     "price": 9000,
