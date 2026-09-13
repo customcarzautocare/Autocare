@@ -1,23 +1,23 @@
 [
   {
     "id": 1789309310981,
-    "name": "New Product",
-    "price": 0,
-    "oldPrice": 0,
-    "stock": 0,
+    "name": "Bi LED headlight projector ",
+    "price": 18000,
+    "oldPrice": 20000,
+    "stock": 300,
     "image": "assets/products/customcarz-1789309332089-0.jpg",
-    "category": "Car Accessories",
-    "subcat": "",
+    "category": "Lighting parts ",
+    "subcat": " Headlight projector ",
     "make": "Universal",
     "model": "All",
     "year": "All",
     "description": "Bi led headlight projector ",
-    "fitment": "",
-    "warranty": "",
+    "fitment": "Universal ",
+    "warranty": "10 years ",
     "featured": false,
-    "bestSelling": false,
+    "bestSelling": true,
     "mustHave": false,
-    "newArrival": true
+    "newArrival": false
   },
   {
     "id": 1789307121137,
