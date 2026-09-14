@@ -87,13 +87,15 @@
     "best": true,
     "must": true,
     "oldPrice": 7000,
-    "warranty": "6"
+    "warranty": "6 years ",
+    "fitment": "14 inch",
+    "bestSelling": false
   },
   {
     "id": 1787860037746,
     "name": "Hand sewing leather steering wheel cover",
     "price": 1500,
-    "image": "assets/products/1001213192-1787860037775.jpg",
+    "image": "assets/products/customcarz-1789367257511-5.jpg",
     "category": "Interior accessories",
     "subcat": "Steering cover",
     "make": "All",
@@ -103,7 +105,8 @@
     "best": true,
     "must": true,
     "oldPrice": 1900,
-    "featured": true
+    "featured": true,
+    "fitment": "Universal "
   },
   {
     "id": 1787859944466,
