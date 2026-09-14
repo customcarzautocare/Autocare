@@ -140,13 +140,18 @@
     "best": true,
     "must": true,
     "oldPrice": 17000,
-    "warranty": "10 years "
+    "warranty": "10 years ",
+    "fitment": "Universal ",
+    "description": "Chameleon windscreen tints installation ",
+    "bestSelling": false,
+    "featured": true,
+    "mustHave": false
   },
   {
     "id": 1787858149387,
     "name": "Toyota car mats",
     "price": 2700,
-    "image": "assets/products/1001213669-1787858149470.jpg",
+    "image": "assets/products/customcarz-1789367384783-8.jpg",
     "category": "Interior",
     "subcat": "Car mats",
     "make": "Toyota",
