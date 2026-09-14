@@ -104,9 +104,11 @@
     "stock": 100,
     "best": true,
     "must": true,
-    "oldPrice": 1900,
+    "oldPrice": 1800,
     "featured": true,
-    "fitment": "Universal "
+    "fitment": "Universal ",
+    "warranty": "5 years ",
+    "description": "DIY 1300\nMobile service 1800"
   },
   {
     "id": 1787859944466,
@@ -128,7 +130,7 @@
     "id": 1787859879217,
     "name": "Chameleon tint",
     "price": 15000,
-    "image": "assets/products/1001214799-1787859879253.jpg",
+    "image": "assets/products/customcarz-1789367335039-7.jpg",
     "category": "Tints wrap PPF ",
     "subcat": "Tint",
     "make": "All",
@@ -137,7 +139,8 @@
     "stock": 20,
     "best": true,
     "must": true,
-    "oldPrice": 17000
+    "oldPrice": 17000,
+    "warranty": "10 years "
   },
   {
     "id": 1787858149387,
