@@ -1,0 +1,28 @@
+CUSTOMCARZ AUTO CARE — v13 FIX UPDATE
+
+This is a SAFE CORE update. It does NOT include site.json, products.json, assets, CNAME, robots.txt or sitemap.xml.
+
+Replace ONLY these two files in your GitHub repository root:
+- index.html
+- admin.html
+
+Do NOT delete or replace your existing:
+- site.json
+- products.json
+- assets/
+- CNAME
+- robots.txt
+- sitemap.xml
+
+Fixes in this update:
+1. PHOTO UPLOADS — GitHub 409 SHA conflicts are automatically retried using the latest file SHA before every save. Product, gallery, category and background uploads are protected against stale SHA conflicts.
+2. REVIEWS — only the FIRST existing review is kept/displayed. The admin loads only the first review and prevents adding a second one. Save Reviews to permanently keep only that first review in site.json.
+3. OUR WORK / PHOTOS — gallery is compact and uses 2 columns, including on mobile, so the section does not become excessively tall.
+4. BACKGROUND — removes the white page/background overlay. Your photographic background is shown directly. White full-page theme overrides have been removed; content panels remain dark/translucent so the photo is visible behind the site.
+5. Existing products and current JSON are preserved. Normal admin saves still do NOT rewrite index.html.
+
+After uploading the two files:
+- Open /admin.html
+- Connect with the same GitHub token
+- For reviews, click SAVE REVIEWS once if you want site.json itself reduced to the first review.
+- For photos, choose the photo and upload normally. The admin will retry SHA conflicts automatically.
