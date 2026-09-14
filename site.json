@@ -10,14 +10,16 @@
   "till": "3111732",
   "googleBusiness": "https://www.google.com/maps/dir/?api=1&destination=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&travelmode=driving",
   "categories": [
-    "Interior Accessories",
-    "Exterior Accessories",
     "Body Parts",
     "Lighting Parts",
-    "Security & emergency",
-    "Infotainment",
     "Ambient lights",
-    "Stickers"
+    "Interior Accessories",
+    "Exterior Accessories",
+    "Decor & Customization",
+    "Electronics & Infotainment",
+    "Lighting Parts",
+    "Cleaning & Maintenance",
+    "Safety & Emergency"
   ],
   "subcategories": [
     "Harrier Grille Security Enforcement",
@@ -177,7 +179,7 @@
       "image": "assets/gallery/custom-1789318642666-7.jpg"
     },
     {
-      "title": "",
+      "title": "Wheel accessories ",
       "image": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=36b21d4ac04e7c59b9ad51292597b0dad23224c6"
     }
   ],
