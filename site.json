@@ -145,6 +145,10 @@
     {
       "title": "Delivery options",
       "text": "Same-day Nairobi delivery and countrywide courier options are available; confirm current terms with us."
+    },
+    {
+      "title": "Wide variety ",
+      "text": "We stock wide variety from ex Japan brand new China or depo"
     }
   ],
   "gallery": [
@@ -237,7 +241,7 @@
     "email": "mailto:customcarzautocare@gmail.com"
   },
   "appearance": {
-    "background": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=cdbf77a20990ac3b5a4c56ade828f9e5939b4b0e",
+    "background": "assets/background.jpg",
     "backgroundPosition": "center top",
     "backgroundSize": "100% auto",
     "overlayOpacity": 0.7,
