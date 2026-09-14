@@ -1,0 +1,32 @@
+CUSTOMCARZ AUTO CARE — V12 SAFE CORE UPDATE
+
+This package is intentionally a SAFE UPDATE. It contains only the customer index/admin core files.
+
+Replace these four files in the GitHub repository (main/root):
+- index.html
+- admin.html
+- index.js
+- admin.js
+
+DO NOT replace or delete:
+- products.json
+- site.json
+- assets/
+- CNAME
+- robots.txt
+- sitemap.xml
+
+Why: the existing repository contains your current catalogue/media. The new core files are designed to read and preserve those current records rather than overwrite them.
+
+Main fixes:
+- normal admin saves NEVER rewrite index.html
+- customer site has embedded fallback and cannot go blank because JSON loading fails
+- customer site reads live site.json/products.json from GitHub Raw with cache busting
+- new product photos are linked to the direct GitHub Raw image URL after upload
+- admin merges current GitHub and customer-index products so older products are not discarded
+- admin re-fetches latest JSON before saves to avoid stale-session overwrites
+- categories, reviews, services, website sections and page labels are loaded into editable forms
+- background overlay defaults to transparent; background/contrast/saturation/brightness remain editable
+- JSON is read-only in normal admin use
+
+After committing the four files, wait for Pages deployment. The customer site itself should remain usable even while Pages is deploying because the page has its embedded fallback and live-data loader.
