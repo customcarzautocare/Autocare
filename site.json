@@ -90,7 +90,9 @@
       "subtitle": "Shell, Kirinyaga Road, Nairobi CBD."
     },
     "header": {
-      "contact": "0757555691 "
+      "contact": "0757555691 ",
+      "categories": "Interior accessories exterior accessories ",
+      "services": "Headlight customisation "
     }
   },
   "services": [
@@ -137,8 +139,8 @@
       "text": "Tinting, wraps, lighting, electronics and security upgrades can be fitted professionally."
     },
     {
-      "title": "Nairobi CBD location",
-      "text": "Easy to find at Shell along Kirinyaga Road, with direct phone and WhatsApp support."
+      "title": "Nairobi CBD 📍 Visit us",
+      "text": "Easy to find at📍 Shell along Kirinyaga Road,near modern coast booking office. "
     },
     {
       "title": "Delivery options",
@@ -276,7 +278,8 @@
     "Security & eme": "assets/category/security-alarms.jpg",
     "Security & emer": "assets/category/security-alarms.jpg",
     "Security & emergency": "assets/category/security-alarms.jpg",
-    "Security & emergency ": "assets/category/security-alarms.jpg"
+    "Security & emergency ": "assets/category/security-alarms.jpg",
+    "Decor & Customization": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=6b32aadd0b4c8ceaf1905925f22525245581e969"
   },
   "placeId": "ChIJVcPNdzkRLxgRoTHjJdsqs8c",
   "googleReviewsUrl": "https://www.google.com/maps/search/?api=1&query=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&query_place_id=ChIJVcPNdzkRLxgRoTHjJdsqs8c",
