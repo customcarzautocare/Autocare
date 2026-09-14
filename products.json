@@ -69,13 +69,15 @@
     "year": "2012 2016 ",
     "stock": 10,
     "best": true,
-    "must": false
+    "must": false,
+    "warranty": "5 years ",
+    "fitment": "Mira"
   },
   {
     "id": 1787860121520,
     "name": "Universal wheel caps cover",
     "price": 6000,
-    "image": "assets/products/1001054137-1787860121552.jpg",
+    "image": "assets/products/customcarz-1789367123450-4.jpg",
     "category": "Exterior accessories",
     "subcat": "Wheel accessories",
     "make": "Universal",
@@ -84,7 +86,8 @@
     "stock": 12,
     "best": true,
     "must": true,
-    "oldPrice": 7000
+    "oldPrice": 7000,
+    "warranty": "6"
   },
   {
     "id": 1787860037746,
