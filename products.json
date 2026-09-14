@@ -160,13 +160,19 @@
     "stock": 10,
     "best": true,
     "must": true,
-    "oldPrice": 3500
+    "oldPrice": 3500,
+    "warranty": "7 years ",
+    "fitment": "Universal ",
+    "description": "Car mats available @customcarz_auto_care ",
+    "bestSelling": false,
+    "mustHave": false,
+    "featured": true
   },
   {
     "id": 1787848348933,
     "name": "Leather seat covers",
     "price": 18000,
-    "image": "assets/products/1001182605-1787848348964.jpg",
+    "image": "assets/products/customcarz-1789367452054-9.jpg",
     "category": "Interior accessories",
     "subcat": "Seat cover",
     "make": "Universal",
