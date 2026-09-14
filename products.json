@@ -573,5 +573,25 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true
+  },
+  {
+    "id": 1789409455618,
+    "name": "New Product",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=489afa67620282bf32f31421abb2e67916ef9b9a",
+    "category": "Car Accessories",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true
   }
 ]
