@@ -241,7 +241,7 @@
     "email": "mailto:customcarzautocare@gmail.com"
   },
   "appearance": {
-    "background": "assets/background.jpg",
+    "background": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=eb4b6abaabff0f2d37cd18cb13aa0d52e5c994ce",
     "backgroundPosition": "center top",
     "backgroundSize": "100% auto",
     "overlayOpacity": 0.7,
