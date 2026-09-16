@@ -595,6 +595,7 @@
     "featured": false,
     "bestSelling": false,
     "mustHave": false,
-    "newArrival": true
+    "newArrival": true,
+    "image": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=8e5c2c01b4e338967e089d70dc9b7c731aa90c20"
   }
 ]
