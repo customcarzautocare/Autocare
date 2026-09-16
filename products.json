@@ -530,7 +530,9 @@
     "stock": 3,
     "best": true,
     "must": true,
-    "oldPrice": 200000
+    "oldPrice": 200000,
+    "bestSelling": false,
+    "mustHave": false
   },
   {
     "id": 14,
