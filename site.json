@@ -241,13 +241,14 @@
     "email": "mailto:customcarzautocare@gmail.com"
   },
   "appearance": {
-    "background": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=eb4b6abaabff0f2d37cd18cb13aa0d52e5c994ce",
+    "background": "assets/background-customcarz.jpg",
     "backgroundPosition": "center top",
     "backgroundSize": "100% auto",
-    "overlayOpacity": 0.7,
+    "overlayOpacity": 0.8,
     "contrast": 5,
     "saturation": 2.35,
-    "brightness": 2
+    "brightness": 2,
+    "overlayColor": "rgba(0,0,0,0)"
   },
   "textOverrides": {
     "footerRights": "@customcarzautocare.co.ke "
