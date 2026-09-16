@@ -154,8 +154,8 @@
   },
   {
     "id": 1787848348933,
-    "name": "Leather seat covers",
-    "price": 18000,
+    "name": "Genuine Nappa Leather seat covers",
+    "price": 15000,
     "image": "assets/products/customcarz-1789367452054-9.jpg",
     "category": "Interior accessories",
     "subcat": "Seat cover",
@@ -165,7 +165,10 @@
     "stock": 11,
     "best": false,
     "must": false,
-    "oldPrice": 20000
+    "oldPrice": 18000,
+    "fitment": "5-SEATER ",
+    "warranty": "7 years ",
+    "description": "Genuine Nappa Leather Seat Covers "
   },
   {
     "id": 1,
@@ -231,17 +234,22 @@
   },
   {
     "id": 8,
-    "name": "All Weather 5D Car Mats - Premio / Allion",
-    "price": 3000,
+    "name": "All Weather 5D Car Mats - heavy duty ",
+    "price": 4500,
     "image": "assets/products/custom-1789412631617-14.jpg",
     "category": "Interior Accessories",
     "subcat": "Car Mats",
     "make": "Toyota",
     "model": "Universal ",
-    "year": "2007-2021",
+    "year": "All",
     "stock": 40,
     "best": true,
-    "must": true
+    "must": true,
+    "oldPrice": 4800,
+    "fitment": "Universal fit 5-seater ",
+    "warranty": "7 years ",
+    "description": "Heavy duty car mats ",
+    "bestSelling": false
   },
   {
     "id": 10,
@@ -256,7 +264,9 @@
     "stock": 15,
     "best": true,
     "must": true,
-    "oldPrice": 15000
+    "oldPrice": 15000,
+    "mustHave": false,
+    "bestSelling": false
   },
   {
     "id": 16,
@@ -310,15 +320,15 @@
     "oldPrice": 0,
     "stock": 0,
     "image": "assets/products/custom-1789319021362-0.jpg",
-    "category": "Car Accessories",
+    "category": "Car Decor and customisation ",
     "subcat": "",
     "make": "Universal",
     "model": "All",
     "year": "All",
-    "description": "",
+    "description": "🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers",
     "fitment": "",
     "warranty": "",
-    "featured": false,
+    "featured": true,
     "bestSelling": false,
     "mustHave": false
   },
@@ -446,7 +456,7 @@
     "id": 1787859944466,
     "name": "Car logo emblem",
     "price": 2000,
-    "image": "https://raw.githubusercontent.com/customcarzautocare/Autocare/main/undefined?v=beaaeae61a3caae8f966d7a9d5f102e93ade797a",
+    "image": "assets/products/InShot_20260916_215322103.jpg",
     "category": "Exterior accessories ",
     "subcat": "Logos",
     "make": "All",
@@ -501,44 +511,50 @@
     "stock": 22,
     "best": false,
     "must": false,
-    "oldPrice": 5000
+    "oldPrice": 5000,
+    "mustHave": true
   },
   {
     "id": 12,
     "name": "Car Tracker + Alarm System 4G",
-    "price": 13500,
+    "price": 8000,
     "image": "assets/products/1001214767-1787859553040.jpg",
-    "category": "Security",
-    "subcat": "Spare Parts",
+    "category": "Safety & emergency ",
+    "subcat": "Alarm system ",
     "make": "Universal",
     "model": "All",
     "year": "All",
     "stock": 10,
     "best": true,
-    "must": true
+    "must": true,
+    "oldPrice": 9000,
+    "bestSelling": false
   },
   {
     "id": 13,
-    "name": "Full Body Wrap Matt Black 3M",
+    "name": "Painting protection film ",
     "price": 165000,
-    "image": "assets/products/background-customcarz.jpg",
-    "category": "Car Stickers / Wraps",
-    "subcat": "Car wraps",
+    "image": "assets/products/InShot_20260916_215944065.jpg",
+    "category": "Decor & Customization ",
+    "subcat": "PPF ",
     "make": "Universal",
     "model": "All",
     "year": "All",
-    "stock": 3,
+    "stock": 20,
     "best": true,
     "must": true,
     "oldPrice": 200000,
     "bestSelling": false,
-    "mustHave": false
+    "mustHave": false,
+    "fitment": "Universal ",
+    "warranty": "8 years ",
+    "description": "Paint protection film 🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers"
   },
   {
     "id": 14,
     "name": "Headlight Restoration + PPF",
     "price": 1500,
-    "image": "assets/products/1001214768-1787859651377.jpg",
+    "image": "assets/products/InShot_20260916_215944065.jpg",
     "category": "Wraps",
     "subcat": "Headlights",
     "make": "Universal",
@@ -547,14 +563,15 @@
     "stock": 99,
     "best": true,
     "must": true,
-    "oldPrice": 2000
+    "oldPrice": 2000,
+    "description": "🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers"
   },
   {
     "id": 18,
     "name": "PPF Paint Protection Film 1.52x15m",
     "price": 100000,
-    "image": "assets/products/1001214769-1787859779790.jpg",
-    "category": "Car Stickers / Wraps",
+    "image": "assets/products/InShot_20260916_215944065.jpg",
+    "category": "Decor & Customization ",
     "subcat": "PPF",
     "make": "Universal",
     "model": "All",
@@ -562,7 +579,11 @@
     "stock": 5,
     "best": true,
     "must": true,
-    "oldPrice": 120000
+    "oldPrice": 120000,
+    "description": "🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers",
+    "mustHave": false,
+    "bestSelling": false,
+    "featured": true
   },
   {
     "id": 19,
