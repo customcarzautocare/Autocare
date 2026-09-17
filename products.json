@@ -1,5 +1,26 @@
 [
   {
+    "id": 1789662366476,
+    "name": "New Product",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/customcarz-1789662388028-r8pzj.jpg",
+    "category": "Body Parts\\nLighting Parts\\nAmbient lights\\nInterior Accessories\\nExterior Accessories\\nDecor & Customization\\nElectronics & Infotainment\\nLighting Parts\\nCleaning & Maintenance\\nSafety & Emergency/Ambient lights /our services",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true,
+    "displayOrder": 1
+  },
+  {
     "id": 1789659720466,
     "name": "1pcs side mirror cover Toyota Fielder 2017 New Model",
     "price": 1600,
