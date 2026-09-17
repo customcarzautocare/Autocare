@@ -1,11 +1,11 @@
 [
   {
-    "id": 1789659001172,
+    "id": 1789659176835,
     "name": "New Product",
     "price": 0,
     "oldPrice": 0,
     "stock": 0,
-    "image": "assets/products/customcarz-1789659028682-a0szv.jpg",
+    "image": "assets/products/customcarz-1789659200432-88j0y.jpg",
     "category": "Body Parts",
     "subcat": "",
     "make": "Universal",
@@ -19,6 +19,27 @@
     "mustHave": false,
     "newArrival": true,
     "displayOrder": 1
+  },
+  {
+    "id": 1789659001172,
+    "name": "Ultra Glossy 5D Vynl wrap",
+    "price": 6000,
+    "oldPrice": 7000,
+    "stock": 30,
+    "image": "assets/products/customcarz-1789659028682-a0szv.jpg",
+    "category": "Car Decor and customisation",
+    "subcat": "Car Wraps",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "Each panel cost 6000",
+    "fitment": "Universal ",
+    "warranty": "7 years ",
+    "featured": true,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": false,
+    "displayOrder": 4
   },
   {
     "id": 1789658859934,
