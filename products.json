@@ -1,11 +1,11 @@
 [
   {
-    "id": 1789659470675,
-    "name": "Tai",
+    "id": 1789659720466,
+    "name": "New Product",
     "price": 0,
     "oldPrice": 0,
     "stock": 0,
-    "image": "assets/products/customcarz-1789659497255-bulwa.jpg",
+    "image": "assets/products/customcarz-1789659749578-jf070.jpg",
     "category": "Body Parts",
     "subcat": "",
     "make": "Universal",
@@ -19,6 +19,27 @@
     "mustHave": false,
     "newArrival": true,
     "displayOrder": 1
+  },
+  {
+    "id": 1789659470675,
+    "name": "Toyota Fielder 161 2017 model Tail light lens & headlight lens",
+    "price": 2500,
+    "oldPrice": 2800,
+    "stock": 20,
+    "image": "assets/products/customcarz-1789659497255-bulwa.jpg",
+    "category": "Lighting Parts",
+    "subcat": "Headlight lenses",
+    "make": "Toyota ",
+    "model": "Fielder ",
+    "year": "2017",
+    "description": "Toyota Fielder 2017 New Model\nHeadlight lenses @3000 each\nTail Light Lens @2500 each ",
+    "fitment": "Toyota Fielder ",
+    "warranty": "8 years ",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true,
+    "displayOrder": 6
   },
   {
     "id": 1789659292432,
