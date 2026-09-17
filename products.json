@@ -1,5 +1,26 @@
 [
   {
+    "id": 1789659001172,
+    "name": "New Product",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/customcarz-1789659028682-a0szv.jpg",
+    "category": "Body Parts",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true,
+    "displayOrder": 1
+  },
+  {
     "id": 1789658859934,
     "name": "Full body car wrapping",
     "price": 90000,
