@@ -1,5 +1,26 @@
 [
   {
+    "id": 1789659470675,
+    "name": "Tai",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/customcarz-1789659497255-bulwa.jpg",
+    "category": "Body Parts",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true,
+    "displayOrder": 1
+  },
+  {
     "id": 1789659292432,
     "name": "Headlight lens Toyota Fielder 161 2017",
     "price": 3000,
