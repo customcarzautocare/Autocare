@@ -7,7 +7,7 @@
     "stock": 0,
     "image": "assets/products/customcarz-1789662388028-r8pzj.jpg",
     "category": "Interior Accessories",
-    "subcat": "",
+    "subcat": "Car mats",
     "make": "Mistubishi ",
     "model": "All",
     "year": "All",
@@ -39,7 +39,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 5
+    "displayOrder": 2
   },
   {
     "id": 1789659470675,
@@ -60,7 +60,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 6
+    "displayOrder": 3
   },
   {
     "id": 1789659292432,
@@ -81,7 +81,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 1
+    "displayOrder": 4
   },
   {
     "id": 1789659176835,
@@ -123,7 +123,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 4
+    "displayOrder": 6
   },
   {
     "id": 1789658859934,
@@ -144,7 +144,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 6
+    "displayOrder": 7
   },
   {
     "id": 1789494568423,
@@ -165,7 +165,7 @@
     "mustHave": false,
     "newArrival": false,
     "image": "assets/products/customcarz-1789576109463-34.jpg",
-    "displayOrder": 1
+    "displayOrder": 8
   },
   {
     "id": 1789658640286,
@@ -186,7 +186,7 @@
     "bestSelling": false,
     "mustHave": true,
     "newArrival": false,
-    "displayOrder": 3
+    "displayOrder": 9
   },
   {
     "id": 1789589185470,
@@ -207,7 +207,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 1
+    "displayOrder": 10
   },
   {
     "id": 1789580508235,
@@ -228,7 +228,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 2
+    "displayOrder": 11
   },
   {
     "id": 19,
@@ -245,7 +245,7 @@
     "must": true,
     "description": "Mazda Cx5  front grille ",
     "bestSelling": false,
-    "displayOrder": 3,
+    "displayOrder": 12,
     "mustHave": true
   },
   {
@@ -267,7 +267,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 4
+    "displayOrder": 13
   },
   {
     "id": 14,
@@ -285,7 +285,7 @@
     "oldPrice": 2000,
     "description": "🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers",
     "bestSelling": false,
-    "displayOrder": 5,
+    "displayOrder": 14,
     "mustHave": true
   },
   {
@@ -307,7 +307,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 5
+    "displayOrder": 15
   },
   {
     "id": 1789631989466,
@@ -328,7 +328,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 6
+    "displayOrder": 16
   },
   {
     "id": 11,
@@ -345,7 +345,7 @@
     "must": false,
     "oldPrice": 5000,
     "mustHave": true,
-    "displayOrder": 6
+    "displayOrder": 17
   },
   {
     "id": 12,
@@ -362,7 +362,7 @@
     "must": true,
     "oldPrice": 9000,
     "bestSelling": true,
-    "displayOrder": 8,
+    "displayOrder": 18,
     "mustHave": false
   },
   {
@@ -384,7 +384,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 8
+    "displayOrder": 19
   },
   {
     "id": 1789632389716,
@@ -405,7 +405,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 9
+    "displayOrder": 20
   },
   {
     "id": 13,
@@ -426,7 +426,7 @@
     "fitment": "Universal ",
     "warranty": "8 years ",
     "description": "Paint protection film 🔥 TURN YOUR CAR INTO A HEAD-TURNER! 🚘✨\n\nWant your car to look different, feel premium and stay protected? We’ve got you covered! 🔥\n\nAt Customcarz Auto Care, we transform ordinary rides into standout machines with:\n\n🛡️ PPF Installation\n🌑 Premium Window Tinting\n🎨 Car Wrapping & Vinyl\n🏷️ Custom Stickers & Decals\n📢 Vehicle Branding\n🖤 Chrome Delete\n💡 Headlight & Tail Light Tinting\n✨ Ambient Interior Lighting\n🚘 Body Styling & Customisation\n🔥 Spoiler & Body Kit Installation\n🪑 Custom Seat Covers\n🧩 Custom Car Mats\n\nDon’t just drive it — customise it! 😎\n📲 Call/WhatsApp: 0757555691 and let’s give your car the look it deserves.\n\n📍 Nairobi CBD, Shell along Kirinyaga Road\n🌐 customcarzautocare.co.ke\n\n#CarCustomization #CarDecor #PPF #WindowTint #CarWrap #CarStickers",
-    "displayOrder": 10,
+    "displayOrder": 21,
     "newArrival": true
   },
   {
@@ -448,7 +448,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 11
+    "displayOrder": 22
   },
   {
     "id": 1789576664339,
@@ -469,7 +469,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 12
+    "displayOrder": 23
   },
   {
     "id": 7,
@@ -485,7 +485,7 @@
     "best": false,
     "must": false,
     "oldPrice": 38000,
-    "displayOrder": 15,
+    "displayOrder": 24,
     "newArrival": true
   },
   {
@@ -507,7 +507,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 15
+    "displayOrder": 25
   },
   {
     "id": 18,
@@ -527,7 +527,7 @@
     "mustHave": false,
     "bestSelling": false,
     "featured": false,
-    "displayOrder": 20
+    "displayOrder": 26
   },
   {
     "id": 1789580281817,
@@ -548,7 +548,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 30
+    "displayOrder": 27
   },
   {
     "id": 1789578646203,
@@ -569,7 +569,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 28
   },
   {
     "id": 1789588660229,
@@ -590,7 +590,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 29
   },
   {
     "id": 1789579903503,
@@ -611,7 +611,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 30
   },
   {
     "id": 8,
@@ -631,7 +631,7 @@
     "warranty": "7 years ",
     "description": "Heavy duty car mats ",
     "bestSelling": false,
-    "displayOrder": 0,
+    "displayOrder": 31,
     "mustHave": true
   },
   {
@@ -648,7 +648,7 @@
     "best": true,
     "must": true,
     "oldPrice": 15000,
-    "displayOrder": 0,
+    "displayOrder": 32,
     "bestSelling": false,
     "mustHave": false,
     "featured": true
@@ -669,7 +669,7 @@
     "oldPrice": 15000,
     "mustHave": false,
     "bestSelling": true,
-    "displayOrder": 0
+    "displayOrder": 33
   },
   {
     "id": 1789309310981,
@@ -690,7 +690,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 34
   },
   {
     "id": 1789579905300,
@@ -711,7 +711,7 @@
     "bestSelling": false,
     "mustHave": true,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 35
   },
   {
     "id": 1789579899163,
@@ -732,7 +732,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 36
   },
   {
     "id": 5,
@@ -748,7 +748,7 @@
     "best": true,
     "must": true,
     "oldPrice": 2800,
-    "displayOrder": 0,
+    "displayOrder": 37,
     "bestSelling": false,
     "mustHave": false,
     "featured": true
@@ -768,7 +768,7 @@
     "must": false,
     "oldPrice": 2500,
     "featured": true,
-    "displayOrder": 0,
+    "displayOrder": 38,
     "bestSelling": false
   },
   {
@@ -790,7 +790,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 39
   },
   {
     "id": 1789319010865,
@@ -810,7 +810,7 @@
     "featured": false,
     "bestSelling": false,
     "mustHave": true,
-    "displayOrder": 0
+    "displayOrder": 40
   },
   {
     "id": 1789578547092,
@@ -831,7 +831,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 41
   },
   {
     "id": 1787859879217,
@@ -853,7 +853,7 @@
     "bestSelling": false,
     "featured": true,
     "mustHave": false,
-    "displayOrder": 0
+    "displayOrder": 42
   },
   {
     "id": 6,
@@ -869,7 +869,7 @@
     "best": true,
     "must": false,
     "oldPrice": 52000,
-    "displayOrder": 0,
+    "displayOrder": 43,
     "bestSelling": true
   },
   {
@@ -886,7 +886,7 @@
     "best": true,
     "must": true,
     "oldPrice": 7500,
-    "displayOrder": 0,
+    "displayOrder": 44,
     "bestSelling": true,
     "mustHave": false,
     "featured": true
@@ -910,7 +910,7 @@
     "bestSelling": false,
     "mustHave": true,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 45
   },
   {
     "id": 1789589041026,
@@ -931,7 +931,7 @@
     "bestSelling": false,
     "mustHave": true,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 46
   },
   {
     "id": 1789307121137,
@@ -952,7 +952,7 @@
     "bestSelling": false,
     "mustHave": true,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 47
   },
   {
     "id": 1789588562337,
@@ -973,7 +973,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 48
   },
   {
     "id": 1789588745022,
@@ -994,7 +994,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 49
   },
   {
     "id": 1789588794518,
@@ -1015,7 +1015,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 50
   },
   {
     "id": 1787848348933,
@@ -1034,7 +1034,7 @@
     "fitment": "5-SEATER ",
     "warranty": "7 years ",
     "description": "Genuine Nappa Leather Seat Covers ",
-    "displayOrder": 0,
+    "displayOrder": 51,
     "featured": true
   },
   {
@@ -1055,7 +1055,7 @@
     "fitment": "Universal ",
     "warranty": "5 years ",
     "description": "DIY 1300\nMobile service 1800",
-    "displayOrder": 0,
+    "displayOrder": 52,
     "bestSelling": false,
     "mustHave": false
   },
@@ -1075,7 +1075,7 @@
     "must": false,
     "warranty": "5 years ",
     "fitment": "Mira",
-    "displayOrder": 0,
+    "displayOrder": 53,
     "bestSelling": false
   },
   {
@@ -1097,7 +1097,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 54
   },
   {
     "id": 1789588869677,
@@ -1118,7 +1118,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 55
   },
   {
     "id": 1789307003177,
@@ -1139,7 +1139,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 56
   },
   {
     "id": 20,
@@ -1155,7 +1155,7 @@
     "best": true,
     "must": false,
     "oldPrice": 20000,
-    "displayOrder": 0,
+    "displayOrder": 57,
     "bestSelling": false
   },
   {
@@ -1177,7 +1177,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 58
   },
   {
     "id": 1787931948920,
@@ -1197,7 +1197,7 @@
     "warranty": "4 years ",
     "fitment": "Universal ",
     "featured": false,
-    "displayOrder": 0
+    "displayOrder": 59
   },
   {
     "id": 16,
@@ -1213,7 +1213,7 @@
     "best": true,
     "must": false,
     "oldPrice": 20000,
-    "displayOrder": 0,
+    "displayOrder": 60,
     "bestSelling": false
   },
   {
@@ -1234,7 +1234,7 @@
     "featured": false,
     "bestSelling": false,
     "mustHave": false,
-    "displayOrder": 0
+    "displayOrder": 61
   },
   {
     "id": 2,
@@ -1251,7 +1251,7 @@
     "must": true,
     "oldPrice": 5000,
     "featured": false,
-    "displayOrder": 0,
+    "displayOrder": 62,
     "bestSelling": false,
     "mustHave": false
   },
@@ -1274,7 +1274,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 63
   },
   {
     "id": 1789588503989,
@@ -1295,7 +1295,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": true,
-    "displayOrder": 0
+    "displayOrder": 64
   },
   {
     "id": 1787858149387,
@@ -1317,7 +1317,7 @@
     "bestSelling": false,
     "mustHave": false,
     "featured": false,
-    "displayOrder": 0
+    "displayOrder": 65
   },
   {
     "id": 1,
@@ -1334,7 +1334,7 @@
     "must": true,
     "oldPrice": 3500,
     "bestSelling": false,
-    "displayOrder": 0,
+    "displayOrder": 66,
     "mustHave": false
   },
   {
@@ -1356,7 +1356,7 @@
     "bestSelling": true,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 67
   },
   {
     "id": 1789580208955,
@@ -1377,7 +1377,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 68
   },
   {
     "id": 1787976753640,
@@ -1397,7 +1397,7 @@
     "featured": false,
     "bestSelling": false,
     "mustHave": false,
-    "displayOrder": 0
+    "displayOrder": 69
   },
   {
     "id": 1789578817909,
@@ -1418,7 +1418,7 @@
     "bestSelling": false,
     "mustHave": false,
     "newArrival": false,
-    "displayOrder": 0
+    "displayOrder": 70
   },
   {
     "id": 1787860121520,
@@ -1437,7 +1437,27 @@
     "warranty": "6 years ",
     "fitment": "14 inch",
     "bestSelling": false,
-    "displayOrder": 0,
+    "displayOrder": 71,
     "mustHave": false
+  },
+  {
+    "id": 1789663813859,
+    "name": "New Product",
+    "price": 0,
+    "stock": 0,
+    "image": "assets/products/customcarz-1789663864378-71.jpg",
+    "category": "Body Parts",
+    "subcat": "Bumpers",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "Universal",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true,
+    "displayOrder": 72
   }
 ]
