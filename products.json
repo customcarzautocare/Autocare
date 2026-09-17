@@ -1626,7 +1626,7 @@
     "name": "New Product",
     "price": 0,
     "stock": 0,
-    "image": "",
+    "image": "assets/products/customcarz-1789664930319-80.jpg",
     "category": "Body Parts",
     "subcat": "Bumpers",
     "make": "Universal",
@@ -1643,12 +1643,12 @@
   },
   {
     "id": 1789664777988,
-    "name": "New",
-    "price": 0,
-    "stock": 0,
+    "name": "Original wind breaker door visor",
+    "price": 5000,
+    "stock": 12,
     "image": "assets/products/customcarz-1789664849946-81.jpg",
-    "category": "Body Parts",
-    "subcat": "Bumpers",
+    "category": "Exterior accessories",
+    "subcat": "Wind Deflectors",
     "make": "Universal",
     "model": "All",
     "year": "All",
@@ -1656,9 +1656,10 @@
     "fitment": "Universal",
     "warranty": "",
     "featured": false,
-    "bestSelling": false,
+    "bestSelling": true,
     "mustHave": false,
-    "newArrival": true,
-    "displayOrder": 82
+    "newArrival": false,
+    "displayOrder": 82,
+    "oldPrice": 6000
   }
 ]
