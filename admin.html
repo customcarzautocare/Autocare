@@ -4,378 +4,220 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>Customcarz Auto Care — Admin</title>
+<title>Customcarz Auto Care — Admin v2</title>
 <style>
-:root{--y:#ffd21a;--bg:#09100c;--panel:#121b16;--line:#2b3a31;--muted:#b9c6be;--red:#a5222e;--green:#20c77a}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#16231c,#070a08 60%);color:#fff;font-family:Inter,system-ui,Arial,sans-serif}.wrap{width:min(1400px,calc(100% - 24px));margin:auto}
-header{position:sticky;top:0;z-index:30;background:#070908f4;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.bar{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-weight:1000}.layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:18px;padding:18px 0 50px}.side{height:max-content;position:sticky;top:86px}.card{background:rgba(18,27,22,.97);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:0 12px 35px rgba(0,0,0,.18)}
-.side button{display:block;width:100%;text-align:left;border:0;background:transparent;color:#fff;padding:12px;border-radius:10px;font-weight:900;margin:3px 0}.side button.active{background:var(--y);color:#111}
+:root{--y:#ffd21a;--bg:#07100b;--panel:#101a14;--line:#2c3b31;--muted:#b8c5bd;--red:#a5222e;--green:#18bd70}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#16251c,#050806 65%);color:#fff;font-family:Inter,system-ui,Arial,sans-serif}
+.wrap{width:min(1450px,calc(100% - 24px));margin:auto}.head{position:sticky;top:0;z-index:50;background:#070908f4;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.bar{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:1000}.layout{display:grid;grid-template-columns:235px minmax(0,1fr);gap:18px;padding:18px 0 60px}
+.side{height:max-content;position:sticky;top:86px}.card{background:rgba(16,26,20,.97);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:0 12px 35px #0004}
+.side button{display:block;width:100%;text-align:left;border:0;background:transparent;color:#fff;padding:12px;border-radius:10px;font-weight:900;margin:3px 0;cursor:pointer}.side button.active{background:var(--y);color:#111}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 label{display:block;font-size:12px;font-weight:900;color:#dce5df;margin-bottom:5px}input,textarea,select{width:100%;background:#080d0a;color:#fff;border:1px solid var(--line);border-radius:10px;padding:11px;outline:none}textarea{min-height:90px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:#82948a;box-shadow:0 0 0 2px #ffffff08}
 .btn{border:1px solid var(--line);background:#1b2820;color:#fff;border-radius:9px;padding:10px 14px;font-weight:950;cursor:pointer}.yellow{background:var(--y);color:#111;border-color:var(--y)}.red{background:var(--red);border-color:#c83a45}.green{background:#123c2a;border-color:#1d8c5c}
-.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.muted{color:var(--muted);font-size:13px}.status{font-size:12px;min-height:18px}.hidden{display:none!important}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.toolbar input{flex:1;min-width:220px}
-.product{border:1px solid var(--line);border-radius:15px;padding:13px;margin:10px 0;background:#0d1410}.productTop{display:grid;grid-template-columns:100px 1fr;gap:13px}.thumb{width:100px;height:82px;object-fit:contain;background:#070b08;border-radius:9px}.checks{display:flex;flex-wrap:wrap;gap:15px;margin-top:10px}.checks label{margin:0}.checks input{width:auto}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.muted{color:var(--muted);font-size:13px}.status{font-size:12px;min-height:18px}.ok{color:#8ff0ba}.danger{color:#ffabb2}.hidden{display:none!important}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}.toolbar input{flex:1;min-width:220px}.notice{border:1px dashed #59695f;border-radius:10px;padding:11px;color:#bdc9c1;font-size:12px;line-height:1.55;margin:10px 0}
+.product{border:1px solid var(--line);border-radius:15px;padding:13px;margin:10px 0;background:#0d1410}.product.dragging{opacity:.45}.productTop{display:grid;grid-template-columns:125px 1fr;gap:13px}.thumb{width:125px;height:100px;object-fit:contain;background:#070b08;border-radius:9px}.checks{display:flex;flex-wrap:wrap;gap:15px;margin-top:10px}.checks label{margin:0}.checks input{width:auto}
 .section{border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}.section h3{margin:0 0 8px;color:var(--y)}.repeat{border:1px solid var(--line);border-radius:12px;padding:12px;margin:9px 0}.mini{padding:7px 10px;font-size:11px}
-.notice{border:1px dashed #59695f;border-radius:10px;padding:11px;color:#bdc9c1;font-size:12px;line-height:1.55}.danger{color:#ffabb2}.ok{color:#8ff0ba}
-@media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;display:flex;overflow:auto;gap:5px}.side button{width:auto;white-space:nowrap}.grid,.grid2,.grid4{grid-template-columns:1fr}.productTop{grid-template-columns:1fr}.bar{padding:10px 0;align-items:flex-start;flex-direction:column}}
+.mediaGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mediaCard{border:1px solid var(--line);border-radius:14px;padding:12px;background:#0d1410}.mediaCard img{width:100%;height:150px;object-fit:cover;border-radius:10px;background:#070b08}.dragHandle{cursor:grab;font-size:20px}.orderBadge{display:inline-flex;min-width:30px;height:30px;align-items:center;justify-content:center;border-radius:50%;background:#27352c;font-weight:1000}
+.catMap{border:1px solid var(--line);border-radius:14px;padding:13px;margin:10px 0;background:#0d1410}.subList{display:flex;flex-wrap:wrap;gap:7px}.chip{border:1px solid var(--line);padding:7px 9px;border-radius:999px;background:#121d17;font-size:12px}.chip input{width:auto;margin-right:5px}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.side{position:static;display:flex;overflow:auto;gap:5px}.side button{width:auto;white-space:nowrap}.grid,.grid2,.grid4,.mediaGrid{grid-template-columns:1fr}.productTop{grid-template-columns:1fr}.bar{padding:10px 0;align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
-<header><div class="wrap bar"><div class="brand">CUSTOMCARZ AUTO CARE — CLASSIC ADMIN</div><div class="row"><a class="btn" href="index.html">OPEN WEBSITE</a><button class="btn red" id="clearSession">CLEAR SESSION</button></div></div></header>
+<header class="head"><div class="wrap bar"><div class="brand">CUSTOMCARZ AUTO CARE — ADMIN v2</div><div class="row"><a class="btn" href="index.html">OPEN WEBSITE</a><button class="btn red" id="clear">CLEAR SESSION</button></div></div></header>
 
 <main class="wrap layout">
 <aside class="side card">
-  <button class="tab active" data-tab="products">Products</button>
-  <button class="tab" data-tab="categories">Categories</button>
-  <button class="tab" data-tab="content">Website Content</button>
-  <button class="tab" data-tab="business">Business</button>
-  <button class="tab" data-tab="appearance">Social & Appearance</button>
-  <button class="tab" data-tab="media">Gallery & Media</button>
-  <button class="tab" data-tab="reviews">Reviews</button>
-  <p class="muted">Normal editing never writes to index.html.</p>
+<button class="tab active" data-tab="products">Products & Sorting</button>
+<button class="tab" data-tab="categories">Categories & Subcategories</button>
+<button class="tab" data-tab="media">All Website Photos</button>
+<button class="tab" data-tab="reviews">Reviews</button>
+<button class="tab" data-tab="content">Website Content</button>
+<button class="tab" data-tab="business">Business & Social</button>
+<div class="muted" style="padding:12px 8px;line-height:1.55">Drag products into the order you want. The admin creates the display numbers automatically, so you never have to remember product numbers.</div>
 </aside>
 
 <section style="min-width:0">
 <section class="card">
-<h2 style="margin-top:0">Connect to the live repository</h2>
-<p class="muted">This admin is built specifically for the current <b>customcarzautocare/Autocare</b> repository. It edits products.json and site.json only.</p>
+<h2 style="margin-top:0">Connect to the current repository</h2>
+<p class="muted">This version is locked to the repository that contains the current Customcarz customer site data.</p>
 <div class="grid">
 <div><label>Owner</label><input id="owner" value="customcarzautocare"></div>
 <div><label>Repository</label><input id="repo" value="Autocare"></div>
 <div><label>Branch</label><input id="branch" value="main"></div>
 </div>
 <div style="margin-top:10px"><label>GitHub fine-grained token</label><input id="token" type="password" autocomplete="off" placeholder="github_pat_..."></div>
-<div class="row" style="margin-top:10px"><button class="btn yellow" id="connect">CONNECT & LOAD</button><button class="btn" id="reload">RELOAD FROM GITHUB</button><span id="msg" class="status"></span></div>
+<div class="row" style="margin-top:10px"><button class="btn yellow" id="connect">CONNECT & LOAD</button><button class="btn" id="reload">RELOAD</button><button class="btn green" id="repair">REPAIR CATALOGUE STRUCTURE</button><span id="msg" class="status"></span></div>
 </section>
 
 <div id="app" class="hidden">
+
 <section id="panel-products" class="panel card">
-<div class="row" style="justify-content:space-between"><div><h2>Products</h2><p class="muted">Every product in the current products.json is loaded. You can control category, subcategory, display order and collection flags.</p></div><div class="row"><button class="btn yellow" id="addProduct">+ ADD PRODUCT</button><button class="btn" id="saveProducts">SAVE ALL PRODUCTS</button></div></div>
-<div class="notice">Display order: <b>1</b> appears first, then 2, 3, etc. Products without an order are placed after ordered products. Image paths are saved as relative paths such as <b>assets/products/photo.jpg</b>, never as raw.githubusercontent.com URLs.</div>
-<div class="toolbar"><input id="search" placeholder="Search name, category, subcategory, make or model"><select id="filterCategory"><option value="">All categories</option></select><button class="btn" id="sortOrder">SORT BY DISPLAY ORDER</button><span class="muted" id="count"></span></div>
+<div class="row" style="justify-content:space-between"><div><h2>Products & visual sorting</h2><p class="muted">Edit every product field, replace its photo, change its category/subcategory, delete it, and drag it to the exact position you want.</p></div><div class="row"><button class="btn yellow" id="addProduct">+ ADD PRODUCT</button><button class="btn" id="saveProducts">SAVE PRODUCTS</button></div></div>
+<div class="notice"><b>Sorting:</b> drag the product card up/down. When you save, displayOrder is automatically rebuilt as 1, 2, 3… in the exact visual order. No manual numbering required.<br><b>Images:</b> product photos are always stored as relative paths such as <b>assets/products/filename.jpg</b>. GitHub/raw URLs are converted to relative paths before saving.</div>
+<div class="toolbar"><input id="search" placeholder="Search product name, category, subcategory, make or model"><select id="filterCategory"><option value="">All categories</option></select><span class="muted" id="count"></span></div>
 <div id="products"></div>
 </section>
 
 <section id="panel-categories" class="panel card hidden">
-<h2>Categories & Subcategories</h2>
-<p class="muted">The category selector used by every product is generated from your current site categories plus categories already used by your products. Saving categories updates site.json; product categories are not silently changed.</p>
-<div class="grid2"><div><label>Categories — one per line</label><textarea id="categoryList"></textarea></div><div><label>Subcategories — one per line</label><textarea id="subcategoryList"></textarea></div></div>
-<div class="row" style="margin-top:10px"><button class="btn yellow" id="saveCategories">SAVE CATEGORIES</button><button class="btn" id="normalizeCategories">CLEAN CATEGORY SPACING</button></div>
-<div id="categorySummary" class="notice" style="margin-top:12px"></div>
-</section>
-
-<section id="panel-content" class="panel card hidden">
-<h2>Website Content</h2><p class="muted">Edit the current values stored in site.json. These changes do not rewrite index.html.</p>
-<div id="sectionEditors"></div>
-<div class="section"><h3>Services</h3><div id="services"></div><button class="btn" id="addService">+ ADD SERVICE</button></div>
-<div class="section"><h3>Why Customcarz</h3><div id="whyItems"></div><button class="btn" id="addWhy">+ ADD BENEFIT</button></div>
-<div class="row"><button class="btn yellow" id="saveContent">SAVE WEBSITE CONTENT</button></div>
-</section>
-
-<section id="panel-business" class="panel card hidden">
-<h2>Business Information</h2><div class="grid2" id="businessFields"></div>
-<div class="grid2"><div><label>Vehicle makes — one per line</label><textarea id="makes"></textarea></div><div><label>Other site text overrides</label><textarea id="textOverrides"></textarea></div></div>
-<button class="btn yellow" id="saveBusiness" style="margin-top:10px">SAVE BUSINESS</button>
-</section>
-
-<section id="panel-appearance" class="panel card hidden">
-<h2>Social & Appearance</h2>
-<div class="grid2" id="socialFields"></div>
-<div class="section"><h3>Background controls</h3><div class="grid4">
-<div><label>Background path</label><input id="bgPath"></div><div><label>Position</label><input id="bgPosition"></div><div><label>Size</label><input id="bgSize"></div><div><label>Overlay opacity</label><input id="overlayOpacity" type="number" min="0" max="1" step=".05"></div>
-<div><label>Contrast</label><input id="contrast" type="number" min="1" max="5" step=".1"></div><div><label>Saturation</label><input id="saturation" type="number" min=".5" max="3" step=".1"></div><div><label>Brightness</label><input id="brightness" type="number" min=".4" max="2" step=".1"></div><div><label>Overlay color</label><input id="overlayColor"></div>
-</div></div>
-<button class="btn yellow" id="saveAppearance">SAVE SOCIAL & APPEARANCE</button>
+<h2>All main categories & subcategories</h2>
+<p class="muted">The hierarchy below is the master list used by the admin. Products can be assigned to one main category and one of its subcategories. Existing products are not deleted by this repair.</p>
+<div class="row"><button class="btn yellow" id="saveCategories">SAVE CATEGORY STRUCTURE</button><button class="btn" id="resetCategoryStructure">RESTORE MASTER CATEGORY LIST</button></div>
+<div id="categoryEditors"></div>
 </section>
 
 <section id="panel-media" class="panel card hidden">
-<h2>Gallery & Media</h2><p class="muted">Existing gallery records are loaded from site.json. Product photos are managed in Products.</p>
-<div id="gallery"></div><button class="btn" id="addGallery">+ ADD GALLERY PHOTO</button><button class="btn yellow" id="saveMedia">SAVE GALLERY</button>
+<h2>All website photos</h2>
+<p class="muted">Replace background, every category image, gallery images, and product photos. Product photos are edited in Products.</p>
+<div class="section"><h3>Website background</h3><div class="grid2"><div><label>Current background path</label><input id="bgPath"></div><div><label>Upload replacement background</label><input type="file" id="bgFile" accept="image/*"><button class="btn green" id="uploadBg" style="margin-top:7px">UPLOAD BACKGROUND</button></div></div><div class="mediaCard" style="margin-top:10px"><img id="bgPreview" alt="Background preview"></div></div>
+<div class="section"><h3>Category photos</h3><div id="categoryMedia" class="mediaGrid"></div></div>
+<div class="section"><h3>Gallery photos</h3><div id="gallery"></div><button class="btn" id="addGallery">+ ADD GALLERY PHOTO</button><button class="btn yellow" id="saveGallery">SAVE GALLERY</button></div>
 </section>
 
 <section id="panel-reviews" class="panel card hidden">
-<h2>Reviews</h2><p class="muted">These are the review records currently stored in site.json.</p>
-<div id="reviews"></div><button class="btn" id="addReview">+ ADD REVIEW</button><button class="btn yellow" id="saveReviews">SAVE REVIEWS</button>
+<h2>Reviews</h2>
+<p class="muted">Add/edit/delete as many reviews as you want. The customer site will display all saved reviews, not only the first one.</p>
+<div id="reviews"></div><button class="btn" id="addReview">+ ADD REVIEW</button><button class="btn yellow" id="saveReviews">SAVE ALL REVIEWS</button>
 </section>
-</div>
+
+<section id="panel-content" class="panel card hidden">
+<h2>Website Content</h2><p class="muted">Edit headings, subtitles, services, benefits and visible labels stored in site.json.</p>
+<div id="sectionEditors"></div>
+<div class="section"><h3>Services</h3><div id="services"></div><button class="btn" id="addService">+ ADD SERVICE</button></div>
+<div class="section"><h3>Why Customcarz</h3><div id="whyItems"></div><button class="btn" id="addWhy">+ ADD BENEFIT</button></div>
+<button class="btn yellow" id="saveContent">SAVE WEBSITE CONTENT</button>
 </section>
-</main>
+
+<section id="panel-business" class="panel card hidden">
+<h2>Business, social & appearance</h2><div class="grid2" id="businessFields"></div>
+<div class="section"><h3>Social links</h3><div class="grid2" id="socialFields"></div></div>
+<div class="grid2"><div><label>Vehicle makes — one per line</label><textarea id="makes"></textarea></div><div><label>Text overrides — JSON</label><textarea id="textOverrides"></textarea></div></div>
+<div class="section"><h3>Background appearance</h3><div class="grid4"><div><label>Position</label><input id="bgPosition"></div><div><label>Size</label><input id="bgSize"></div><div><label>Overlay opacity</label><input id="overlayOpacity" type="number" min="0" max=".8" step=".01"></div><div><label>Overlay color</label><input id="overlayColor"></div><div><label>Contrast</label><input id="contrast" type="number" min="1" max="5" step=".1"></div><div><label>Saturation</label><input id="saturation" type="number" min=".5" max="3" step=".05"></div><div><label>Brightness</label><input id="brightness" type="number" min=".4" max="2" step=".05"></div></div></div>
+<button class="btn yellow" id="saveBusiness">SAVE BUSINESS / SOCIAL / APPEARANCE</button>
+</section>
+
+</div></section></main>
 
 <script>
 'use strict';
 const $=id=>document.getElementById(id);
 let products=[],cfg={},sha={};
-
+const MASTER={
+"Body Parts":["Bumpers","Body Kits","Side Skirts","Spoilers","Grilles","Fenders","Side Mirrors","Mirror Glass","Bonnet","Boot/Trunk","Door Handles","Door Panels"],
+"Lighting Parts":["Headlights","Headlight Lenses","Fog Lights","LED Headlights","LED Bulbs","DRL","Projectors","Tail Light Lenses","Tail Lights","Indicators","LED Badges"],
+"Ambient Lights":["Interior Ambient Lighting","Footwell Lights","Door Ambient Lights","Dashboard Ambient Lights","RGB Ambient Lights","LED Strips","Star Roof Lighting"],
+"Interior Accessories":["Car Mats","5D/7D Mats","Seat Covers","Leather Seat Covers","Fabric Seat Covers","Steering Wheel Covers","Dashboard Covers","Car Covers","Sunshades","Perfumes & Air Fresheners","Interior Organisers","Door Sill Plates"],
+"Exterior Accessories":["Wheel Accessories","Wheel Caps","Wind Deflectors","Car Emblems & Logos","Number Plate Accessories","Mud Flaps","Chrome Accessories","Roof Accessories","Side Steps","Exterior Trim"],
+"Decor & Customization":["Car Stickers & Decals","Custom Stickers","Car Wrapping","PPF Installation","Paint Protection","Chrome Delete","Interior Customization","Exterior Customization","Caliper Painting","Detailing & Restoration"],
+"Electronics & Infotainment":["Android Radios","Car Radios","Speakers","Subwoofers","Amplifiers","Reverse Cameras","360 Cameras","Dashcams","GPS Navigation","Parking Sensors","USB Chargers","Bluetooth Accessories"],
+"Cleaning & Maintenance":["Car Shampoo","Dashboard Polish","Interior Cleaners","Tyre Shine","Glass Cleaner","Microfiber Towels","Detailing Products","Polishing Products","Restoration Products","Air Fresheners"],
+"Safety & Emergency":["Car Alarms","GPS Trackers","Immobilizers","Dashcams","Emergency Kits","Fire Extinguishers","Warning Triangles","First Aid Kits","Security Locks","Parking Sensors"]
+};
+const CATEGORY_IMAGES={
+"Body Parts":"assets/category/body-parts.jpg","Lighting Parts":"assets/category/lighting-parts.jpg","Ambient Lights":"assets/category/ambient-lights-1789314963348.jpg",
+"Interior Accessories":"assets/category/interior-accessories-1789414312403.jpg","Exterior Accessories":"assets/category/exterior-accessories-1789414330586.jpg",
+"Decor & Customization":"assets/category/decor-customization-1789414278399.jpg","Electronics & Infotainment":"assets/category/electronics-infotainment-1789414364718.jpg",
+"Cleaning & Maintenance":"assets/category/cleaning-maintenance-1789414392050.jpg","Safety & Emergency":"assets/category/safety-emergency-1789414453113.jpg"
+};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function msg(t,ok=false){$('msg').textContent=t;$('msg').className='status '+(ok?'ok':'danger')}
 function apiBase(){return 'https://api.github.com/repos/'+encodeURIComponent($('owner').value.trim())+'/'+encodeURIComponent($('repo').value.trim())+'/contents/'}
-function rawBase(){return 'https://raw.githubusercontent.com/'+$('owner').value.trim()+'/'+$('repo').value.trim()+'/'+encodeURIComponent($('branch').value.trim())+'/'}
+function rawBase(){return 'https://raw.githubusercontent.com/'+$('owner').value.trim()+'/'+$('repo').value.trim()+'/'+$('branch').value.trim()+'/'}
 function headers(){return {'Accept':'application/vnd.github+json','Authorization':'Bearer '+$('token').value.trim(),'X-GitHub-Api-Version':'2022-11-28'}}
-function b64(s){return btoa(unescape(encodeURIComponent(s)))}
-function ub64(s){return decodeURIComponent(escape(atob(s)))}
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function b64(s){return btoa(unescape(encodeURIComponent(s)))} function ub64(s){return decodeURIComponent(escape(atob(String(s).replace(/\n/g,''))))}
 function relPath(v){
-  v=String(v||'').trim();
-  if(!v)return '';
-  try{
-    if(/^https?:\/\//i.test(v)){
-      const u=new URL(v);
-      const marker='/'+$('repo').value.trim()+'/';
-      const idx=u.pathname.indexOf(marker);
-      if(idx>=0){
-        let p=u.pathname.slice(idx+marker.length);
-        const branch='/'+$('branch').value.trim()+'/';
-        if(p.startsWith(branch))p=p.slice(branch.length);
-        return p.replace(/^\/+/,'');
-      }
-      const rawMarker='/'+$('owner').value.trim()+'/'+$('repo').value.trim()+'/'+$('branch').value.trim()+'/';
-      const i2=u.pathname.indexOf(rawMarker);
-      if(i2>=0)return u.pathname.slice(i2+rawMarker.length).replace(/^\/+/,'');
-      return v;
-    }
-  }catch(e){}
-  return v.replace(/^\/+/,'').replace(/^assets\/products\/https?:.*$/,'');
-}
-function assetUrl(v){
-  const p=relPath(v);
-  if(!p)return '';
-  if(/^https?:\/\//i.test(p))return p;
-  return new URL(p,window.location.origin+'/').href;
-}
-async function api(path,opt={}){
-  if(!$('token').value.trim())throw Error('Enter your GitHub token');
-  const r=await fetch(apiBase()+path,{...opt,headers:{...headers(),...(opt.headers||{})}});
-  const text=await r.text();
-  if(!r.ok)throw Error(text.slice(0,800));
-  return text?JSON.parse(text):{};
-}
-async function getFile(path){
-  const r=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());
-  sha[path]=r.sha;
-  return {json:JSON.parse(ub64(r.content)),raw:r};
-}
-async function putFile(path,obj,message){
-  const content=b64(JSON.stringify(obj,null,2));
-  for(let attempt=0;attempt<5;attempt++){
-    try{
-      const latest=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());
-      const body={message,content,branch:$('branch').value.trim(),sha:latest.sha};
-      const saved=await api(path,{method:'PUT',body:JSON.stringify(body)});
-      sha[path]=saved.content?.sha||latest.sha;
-      return saved;
-    }catch(e){
-      const s=String(e.message||e);
-      if(/409|does not match|sha/i.test(s)&&attempt<4){await new Promise(r=>setTimeout(r,500*(attempt+1)));continue}
-      throw e;
-    }
+ v=String(v||'').trim(); if(!v)return '';
+ try{
+  if(/^https?:\/\//i.test(v)){
+   const u=new URL(v), owner=$('owner').value.trim(), repo=$('repo').value.trim(), branch=$('branch').value.trim();
+   const markers=[`/${owner}/${repo}/${branch}/`,`/${repo}/`];
+   for(const marker of markers){const i=u.pathname.indexOf(marker);if(i>=0){let p=u.pathname.slice(i+marker.length);return p.replace(/^\/+/,'')}}
+   if(u.hostname==='raw.githubusercontent.com')return v;
   }
-  throw Error('GitHub could not save '+path);
+ }catch(e){}
+ return v.replace(/^\/+/,'');
 }
-async function deleteFile(path,message){
-  for(let attempt=0;attempt<5;attempt++){
-    try{
-      const latest=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());
-      return await api(path,{method:'DELETE',body:JSON.stringify({message,branch:$('branch').value.trim(),sha:latest.sha})});
-    }catch(e){
-      const s=String(e.message||e);
-      if(/409|does not match|sha/i.test(s)&&attempt<4){await new Promise(r=>setTimeout(r,500*(attempt+1)));continue}
-      if(/404/.test(s))return null;
-      throw e;
-    }
-  }
-}
-function uniqueCategories(){
-  const out=[],seen=new Set();
-  [...(cfg.categories||[]),...products.map(p=>p.category)].forEach(x=>{
-    const v=String(x||'').trim();const k=v.toLowerCase();
-    if(v&&!seen.has(k)){seen.add(k);out.push(v)}
-  });
-  return out;
-}
-function uniqueSubcats(cat){
-  const out=[],seen=new Set();
-  products.filter(p=>!cat||String(p.category||'').trim().toLowerCase()===String(cat||'').trim().toLowerCase()).forEach(p=>{
-    const v=String(p.subcat||'').trim();const k=v.toLowerCase();
-    if(v&&!seen.has(k)){seen.add(k);out.push(v)}
-  });
-  (cfg.subcategories||[]).forEach(v=>{v=String(v||'').trim();const k=v.toLowerCase();if(v&&!seen.has(k)){seen.add(k);out.push(v)}});
-  return out;
-}
-function normalizeProduct(p,i){
-  p.id=p.id??Date.now()+i;
-  p.name=String(p.name||'').trim();
-  p.image=relPath(p.image);
-  p.category=String(p.category||'').trim();
-  p.subcat=String(p.subcat||'').trim();
-  p.displayOrder=Number.isFinite(Number(p.displayOrder))?Number(p.displayOrder):Number.isFinite(Number(p.order))?Number(p.order):0;
-  if(p.best===true&&!('bestSelling' in p))p.bestSelling=true;
-  if(p.must===true&&!('mustHave' in p))p.mustHave=true;
-  return p;
+function assetUrl(v){const p=relPath(v);if(!p)return '';if(/^https?:\/\//i.test(p))return p;return new URL(p,location.origin+'/').href}
+async function api(path,opt={}){if(!$('token').value.trim())throw Error('Enter GitHub token');const r=await fetch(apiBase()+path,{...opt,headers:{...headers(),...(opt.headers||{})}});const t=await r.text();if(!r.ok)throw Error(t.slice(0,800));return t?JSON.parse(t):{}}
+async function getFile(path){const r=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());sha[path]=r.sha;return JSON.parse(ub64(r.content))}
+async function putFile(path,obj,message){const content=b64(JSON.stringify(obj,null,2));for(let a=0;a<5;a++){try{const latest=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());const r=await api(path,{method:'PUT',body:JSON.stringify({message,content,branch:$('branch').value.trim(),sha:latest.sha})});sha[path]=r.content?.sha||latest.sha;return r}catch(e){if(/409|sha|does not match/i.test(String(e))&&a<4){await new Promise(r=>setTimeout(r,450*(a+1)));continue}throw e}}}
+async function deleteFile(path,message){for(let a=0;a<5;a++){try{const r=await api(path+'?ref='+encodeURIComponent($('branch').value.trim())+'&_='+Date.now());return await api(path,{method:'DELETE',body:JSON.stringify({message,branch:$('branch').value.trim(),sha:r.sha})})}catch(e){if(/404/.test(String(e)))return null;if(/409|sha|does not match/i.test(String(e))&&a<4){await new Promise(r=>setTimeout(r,450*(a+1)));continue}throw e}}}
+async function fileBase64(file){if(!file)throw Error('Choose an image');if(!file.type.startsWith('image/'))throw Error('Please choose an image file');const bmp=await createImageBitmap(file);const max=2400,scale=Math.min(1,max/Math.max(bmp.width,bmp.height));const c=document.createElement('canvas');c.width=Math.max(1,Math.round(bmp.width*scale));c.height=Math.max(1,Math.round(bmp.height*scale));c.getContext('2d').drawImage(bmp,0,0,c.width,c.height);const blob=await new Promise(r=>c.toBlob(r,'image/jpeg',.9));const reader=new FileReader();return await new Promise((res,rej)=>{reader.onload=()=>res(String(reader.result).split(',')[1]);reader.onerror=rej;reader.readAsDataURL(blob)})}
+async function uploadImage(path,file,message){const content=await fileBase64(file);let old=null;try{old=await api(path+'?ref='+encodeURIComponent($('branch').value.trim()))}catch(e){}const body={message,content,branch:$('branch').value.trim()};if(old?.sha)body.sha=old.sha;return api(path,{method:'PUT',body:JSON.stringify(body)})}
+function cleanList(a){return [...new Map((Array.isArray(a)?a:[]).map(x=>[String(x||'').trim().toLowerCase(),String(x||'').trim()]).filter(x=>x[1])).values()]}
+function normalizeProduct(p,i){p=p||{};p.id=p.id??Date.now()+i;p.name=String(p.name||'').trim();p.image=relPath(p.image);p.category=String(p.category||'').trim();p.subcat=String(p.subcat||'').trim();p.displayOrder=Number.isFinite(Number(p.displayOrder))?Number(p.displayOrder):0;return p}
+function categories(){return cleanList([...Object.keys(MASTER),...(cfg.categories||[]),...products.map(p=>p.category)])}
+function subcats(cat){const master=MASTER[cat]||[];const used=products.filter(p=>p.category.toLowerCase()===cat.toLowerCase()).map(p=>p.subcat);return cleanList([...master,...used])}
+function renderProducts(){
+ const q=$('search').value.trim().toLowerCase(),fc=$('filterCategory').value.trim().toLowerCase();
+ const list=products.map((p,i)=>({p:normalizeProduct(p,i),i})).filter(x=>(!q||JSON.stringify(x.p).toLowerCase().includes(q))&&(!fc||x.p.category.toLowerCase()===fc));
+ $('count').textContent=`Showing ${list.length} of ${products.length} products`;
+ $('products').innerHTML=list.map(x=>renderProduct(x.p,x.i)).join('')||'<div class="notice">No products match the search.</div>';
+ const canDrag=!q&&!fc;
+document.querySelectorAll('.product').forEach(el=>{
+ el.draggable=canDrag;
+ el.ondragstart=canDrag?()=>{el.classList.add('dragging')}:null;
+ el.ondragend=canDrag?()=>{el.classList.remove('dragging');syncOrderFromDOM()}:null;
+ el.ondragover=canDrag?e=>{e.preventDefault();const d=document.querySelector('.dragging');if(!d||d===el)return;const r=el.getBoundingClientRect();if(e.clientY<r.top+r.height/2)el.before(d);else el.after(d)}:null;
+});
+ document.querySelectorAll('#products [data-i]').forEach(el=>el.oninput=()=>{const i=+el.dataset.i,p=products[i],k=el.dataset.k;if(!p)return;p[k]=el.type==='checkbox'?el.checked:el.type==='number'?Number(el.value):el.value;if(k==='category'||k==='subcat')renderProducts()});
 }
 function renderProduct(p,i){
-  const cats=uniqueCategories();
-  const subs=uniqueSubcats(p.category);
-  const catOpts=cats.map(c=>`<option value="${esc(c)}" ${c.toLowerCase()===p.category.toLowerCase()?'selected':''}>${esc(c)}</option>`).join('');
-  const subOpts=subs.map(c=>`<option value="${esc(c)}" ${c.toLowerCase()===p.subcat.toLowerCase()?'selected':''}>${esc(c)}</option>`).join('');
-  return `<article class="product" data-id="${esc(p.id)}">
-    <div class="productTop">
-      <div><img class="thumb" src="${esc(assetUrl(p.image))}" onerror="this.style.opacity=.18" alt=""><div class="muted" style="margin-top:6px">ID: ${esc(p.id)}</div></div>
-      <div class="grid3">
-        <div><label>Name</label><input data-i="${i}" data-k="name" value="${esc(p.name)}"></div>
-        <div><label>Price KSh</label><input type="number" data-i="${i}" data-k="price" value="${esc(p.price??0)}"></div>
-        <div><label>Old price</label><input type="number" data-i="${i}" data-k="oldPrice" value="${esc(p.oldPrice??0)}"></div>
-        <div><label>Stock</label><input type="number" data-i="${i}" data-k="stock" value="${esc(p.stock??0)}"></div>
-        <div><label>Display order</label><input type="number" min="0" data-i="${i}" data-k="displayOrder" value="${esc(p.displayOrder||0)}"><small class="muted">1 = first</small></div>
-        <div><label>Category</label><select data-i="${i}" data-k="category">${catOpts}<option value="${esc(p.category)}" ${cats.some(c=>c.toLowerCase()===p.category.toLowerCase())?'':'selected'}>${esc(p.category||'Uncategorised')}</option></select></div>
-        <div><label>Subcategory</label><select data-i="${i}" data-k="subcat"><option value="">Select</option>${subOpts}<option value="${esc(p.subcat)}" ${subs.some(c=>c.toLowerCase()===p.subcat.toLowerCase())?'':'selected'}>${esc(p.subcat)}</option></select></div>
-        <div><label>Make</label><input data-i="${i}" data-k="make" value="${esc(p.make||'')}"></div>
-        <div><label>Model</label><input data-i="${i}" data-k="model" value="${esc(p.model||'')}"></div>
-        <div><label>Year</label><input data-i="${i}" data-k="year" value="${esc(p.year||'')}"></div>
-        <div><label>Fitment</label><input data-i="${i}" data-k="fitment" value="${esc(p.fitment||'')}"></div>
-        <div><label>Warranty</label><input data-i="${i}" data-k="warranty" value="${esc(p.warranty||'')}"></div>
-        <div><label>Image path</label><input data-i="${i}" data-k="image" value="${esc(p.image||'')}"><small class="muted">Saved as assets/products/…</small></div>
-        <div><label>Upload replacement photo</label><input type="file" accept="image/*" data-file="${i}"></div>
-        <div><label>&nbsp;</label><button class="btn green" type="button" onclick="uploadPhoto(${i})">UPLOAD PHOTO</button></div>
-      </div>
-    </div>
-    <div style="margin-top:10px"><label>Description</label><textarea data-i="${i}" data-k="description">${esc(p.description||'')}</textarea></div>
-    <div class="checks">
-      <label><input type="checkbox" data-i="${i}" data-k="featured" ${p.featured?'checked':''}> Featured</label>
-      <label><input type="checkbox" data-i="${i}" data-k="bestSelling" ${(p.bestSelling||p.best)?'checked':''}> Best Selling</label>
-      <label><input type="checkbox" data-i="${i}" data-k="mustHave" ${(p.mustHave||p.must)?'checked':''}> Must Have</label>
-      <label><input type="checkbox" data-i="${i}" data-k="newArrival" ${p.newArrival?'checked':''}> New Arrival</label>
-      <button class="btn red" type="button" onclick="deleteProduct(${i})">DELETE PRODUCT</button>
-    </div>
-  </article>`;
+ const cats=categories(), subs=subcats(p.category), img=assetUrl(p.image);
+ return `<article class="product" draggable="true" data-index="${i}">
+ <div class="productTop"><div><div class="dragHandle" title="Drag to reorder">☷</div><img class="thumb" src="${esc(img)}" onerror="this.style.opacity=.18" alt=""><div class="muted" style="margin-top:6px">Display position: ${i+1}</div></div>
+ <div class="grid3"><div><label>Name</label><input data-i="${i}" data-k="name" value="${esc(p.name)}"></div>
+ <div><label>Price KSh</label><input type="number" data-i="${i}" data-k="price" value="${esc(p.price??0)}"></div>
+ <div><label>Old price</label><input type="number" data-i="${i}" data-k="oldPrice" value="${esc(p.oldPrice??'')}"></div>
+ <div><label>Stock</label><input type="number" data-i="${i}" data-k="stock" value="${esc(p.stock??'')}"></div>
+ <div><label>Main category</label><select data-i="${i}" data-k="category"><option value="">Uncategorised</option>${cats.map(c=>`<option ${c.toLowerCase()===p.category.toLowerCase()?'selected':''}>${esc(c)}</option>`).join('')}</select></div>
+ <div><label>Subcategory</label><select data-i="${i}" data-k="subcat"><option value="">Select subcategory</option>${subs.map(s=>`<option ${s.toLowerCase()===p.subcat.toLowerCase()?'selected':''}>${esc(s)}</option>`).join('')}</select></div>
+ <div><label>Make</label><input data-i="${i}" data-k="make" value="${esc(p.make||'')}"></div><div><label>Model</label><input data-i="${i}" data-k="model" value="${esc(p.model||'')}"></div>
+ <div><label>Year</label><input data-i="${i}" data-k="year" value="${esc(p.year||'')}"></div><div><label>Fitment</label><input data-i="${i}" data-k="fitment" value="${esc(p.fitment||'')}"></div>
+ <div><label>Warranty</label><input data-i="${i}" data-k="warranty" value="${esc(p.warranty||'')}"></div><div><label>Image path</label><input data-i="${i}" data-k="image" value="${esc(p.image||'')}"></div>
+ <div><label>Replace photo</label><input type="file" accept="image/*" data-file="${i}"></div><div><label>&nbsp;</label><button class="btn green" type="button" onclick="uploadProductPhoto(${i})">UPLOAD PHOTO</button></div>
+ </div></div>
+ <div style="margin-top:10px"><label>Description</label><textarea data-i="${i}" data-k="description">${esc(p.description||'')}</textarea></div>
+ <div class="checks"><label><input type="checkbox" data-i="${i}" data-k="featured" ${p.featured?'checked':''}> Featured</label><label><input type="checkbox" data-i="${i}" data-k="bestSelling" ${(p.bestSelling||p.best)?'checked':''}> Best Selling</label><label><input type="checkbox" data-i="${i}" data-k="mustHave" ${(p.mustHave||p.must)?'checked':''}> Must Have</label><label><input type="checkbox" data-i="${i}" data-k="newArrival" ${p.newArrival?'checked':''}> New Arrival</label>
+ <button class="btn red" type="button" onclick="deleteProduct(${i})">DELETE PRODUCT</button></div></article>`;
 }
-function renderProducts(){
-  const q=$('search').value.trim().toLowerCase(),fc=$('filterCategory').value.trim().toLowerCase();
-  const list=products.map((p,i)=>({p:normalizeProduct(p,i),i})).filter(({p})=>{
-    const hay=JSON.stringify(p).toLowerCase();
-    return (!q||hay.includes(q))&&(!fc||p.category.toLowerCase()===fc);
-  });
-  $('count').textContent=`Showing ${list.length} of ${products.length} products`;
-  $('products').innerHTML=list.map(x=>renderProduct(x.p,x.i)).join('')||'<div class="notice">No products match your search.</div>';
-  document.querySelectorAll('#products [data-i]').forEach(el=>{
-    el.oninput=()=>{
-      const i=Number(el.dataset.i),k=el.dataset.k,p=products[i];
-      if(!p)return;
-      p[k]=el.type==='checkbox'?el.checked:el.type==='number'?Number(el.value):el.value;
-      if(k==='category'){p.category=String(el.value).trim();renderProducts();}
-    };
-  });
-}
-function refreshCategoryFilter(){
-  $('filterCategory').innerHTML='<option value="">All categories</option>'+uniqueCategories().map(c=>`<option>${esc(c)}</option>`).join('');
-}
+function syncOrderFromDOM(){const ids=[...document.querySelectorAll('#products .product')].map(x=>+x.dataset.index);const reordered=[];ids.forEach(i=>reordered.push(products[i]));const visibleSet=new Set(ids);const rest=products.filter((_,i)=>!visibleSet.has(i));products=[...reordered,...rest];products.forEach((p,i)=>p.displayOrder=i+1);renderProducts()}
+function refreshCategoryFilter(){$('filterCategory').innerHTML='<option value="">All categories</option>'+categories().map(c=>`<option>${esc(c)}</option>`).join('')}
 function renderCategories(){
-  $('categoryList').value=(cfg.categories||[]).join('\\n');
-  $('subcategoryList').value=(cfg.subcategories||[]).join('\\n');
-  $('makes').value=(cfg.makes||[]).join('\\n');
-  const counts={};products.forEach(p=>{const k=String(p.category||'Uncategorised').trim()||'Uncategorised';counts[k]=(counts[k]||0)+1});
-  $('categorySummary').innerHTML=uniqueCategories().map(c=>`<b>${esc(c)}</b>: ${counts[c]||0} product(s)`).join(' · ');
+ const all=cleanList([...Object.keys(MASTER),...(cfg.categories||[])]);
+ $('categoryEditors').innerHTML=all.map(cat=>`<div class="catMap"><div class="row" style="justify-content:space-between"><h3 style="margin:0">${esc(cat)}</h3><button class="btn" onclick="addSub('${esc(cat)}')">+ SUBCATEGORY</button></div><div class="subList">${subcats(cat).map(s=>`<label class="chip"><input type="checkbox" checked data-cat="${esc(cat)}" data-sub="${esc(s)}"> ${esc(s)}</label>`).join('')}</div></div>`).join('');
 }
-function renderContent(){
-  const defs=cfg.websiteSections||{};
-  $('sectionEditors').innerHTML=Object.entries(defs).map(([key,obj])=>{
-    if(!obj||typeof obj!=='object')return '';
-    return `<div class="section"><h3>${esc(key)}</h3><div class="grid2">${Object.entries(obj).map(([k,v])=>`<div><label>${esc(k)}</label><textarea data-sec="${esc(key)}" data-key="${esc(k)}">${esc(v)}</textarea></div>`).join('')}</div></div>`;
-  }).join('');
-  $('services').innerHTML=(cfg.services||[]).map((s,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-service="${i}" data-k="title" value="${esc(s.title||'')}"></div><div><label>Description</label><textarea data-service="${i}" data-k="text">${esc(s.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeService(${i})">REMOVE</button></div>`).join('');
-  $('whyItems').innerHTML=(cfg.whyItems||[]).map((s,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-why="${i}" data-k="title" value="${esc(s.title||'')}"></div><div><label>Description</label><textarea data-why="${i}" data-k="text">${esc(s.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeWhy(${i})">REMOVE</button></div>`).join('');
-  document.querySelectorAll('[data-sec]').forEach(e=>e.oninput=()=>{cfg.websiteSections[e.dataset.sec][e.dataset.key]=e.value});
-  document.querySelectorAll('[data-service]').forEach(e=>e.oninput=()=>{cfg.services[Number(e.dataset.service)][e.dataset.k]=e.value});
-  document.querySelectorAll('[data-why]').forEach(e=>e.oninput=()=>{cfg.whyItems[Number(e.dataset.why)][e.dataset.k]=e.value});
+function renderMedia(){
+ const a=cfg.appearance||{};$('bgPath').value=relPath(a.background||'assets/background-professional.jpg');$('bgPreview').src=assetUrl($('bgPath').value);
+ const cats=cleanList([...Object.keys(MASTER),...(cfg.categories||[])]);
+ $('categoryMedia').innerHTML=cats.map(cat=>{const p=(cfg.categoryImages||{})[cat]||CATEGORY_IMAGES[cat]||'';return `<div class="mediaCard"><b>${esc(cat)}</b><img src="${esc(assetUrl(p))}" alt=""><input type="file" accept="image/*" data-catfile="${esc(cat)}" style="margin-top:8px"><button class="btn green" style="margin-top:7px" onclick="uploadCategoryPhoto('${esc(cat)}')">REPLACE CATEGORY PHOTO</button><div class="muted" style="margin-top:6px">${esc(relPath(p))}</div></div>`}).join('');
+ $('gallery').innerHTML=(cfg.gallery||[]).map((g,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-gallery="${i}" data-k="title" value="${esc(g.title||'')}"></div><div><label>Image path</label><input data-gallery="${i}" data-k="image" value="${esc(relPath(g.image||''))}"><input type="file" accept="image/*" data-galleryfile="${i}" style="margin-top:7px"><button class="btn green" style="margin-top:7px" onclick="uploadGalleryPhoto(${i})">REPLACE GALLERY PHOTO</button></div></div><button class="btn red mini" onclick="removeGallery(${i})">REMOVE</button></div>`).join('');
+ document.querySelectorAll('[data-gallery]').forEach(e=>e.oninput=()=>cfg.gallery[+e.dataset.gallery][e.dataset.k]=e.dataset.k==='image'?relPath(e.value):e.value);
 }
-function renderBusiness(){
-  const keys=[['bizName','Business name'],['tagline','Tagline'],['description','Description'],['mission','Mission'],['vision','Vision'],['phone','Phone'],['email','Email'],['location','Location'],['hours','Opening hours'],['till','Till / payment number'],['googleBusiness','Google Business URL'],['googleReviewsUrl','Google Reviews URL']];
-  $('businessFields').innerHTML=keys.map(([k,l])=>`<div><label>${l}</label><textarea data-biz="${k}">${esc(cfg[k]||'')}</textarea></div>`).join('');
-  document.querySelectorAll('[data-biz]').forEach(e=>e.oninput=()=>cfg[e.dataset.biz]=e.value);
-  $('textOverrides').value=JSON.stringify(cfg.textOverrides||{},null,2);
-}
-function renderAppearance(){
-  const links=cfg.links||{};
-  const keys=['phone','whatsapp','instagram','facebook','tiktok','x','youtube','pinterest','maps','jiji','email'];
-  $('socialFields').innerHTML=keys.map(k=>`<div><label>${k}</label><input data-link="${k}" value="${esc(links[k]||'')}"></div>`).join('');
-  document.querySelectorAll('[data-link]').forEach(e=>e.oninput=()=>{cfg.links=cfg.links||{};cfg.links[e.dataset.link]=e.value});
-  const a=cfg.appearance||{};$('bgPath').value=relPath(a.background||'');$('bgPosition').value=a.backgroundPosition||'center top';$('bgSize').value=a.backgroundSize||'cover';$('overlayOpacity').value=a.overlayOpacity??0;$('contrast').value=a.contrast??2;$('saturation').value=a.saturation??1;$('brightness').value=a.brightness??1;$('overlayColor').value=a.overlayColor||'rgba(0,0,0,0)';
-}
-function renderGallery(){
-  $('gallery').innerHTML=(cfg.gallery||[]).map((g,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-gallery="${i}" data-k="title" value="${esc(g.title||'')}"></div><div><label>Image path</label><input data-gallery="${i}" data-k="image" value="${esc(relPath(g.image||''))}"></div></div><button class="btn red mini" onclick="removeGallery(${i})">REMOVE</button></div>`).join('');
-  document.querySelectorAll('[data-gallery]').forEach(e=>e.oninput=()=>{cfg.gallery[Number(e.dataset.gallery)][e.dataset.k]=e.dataset.k==='image'?relPath(e.value):e.value});
-}
-function renderReviews(){
-  $('reviews').innerHTML=(cfg.reviews||[]).map((r,i)=>`<div class="repeat"><div class="grid2"><div><label>Name</label><input data-review="${i}" data-k="name" value="${esc(r.name||'')}"></div><div><label>Review</label><textarea data-review="${i}" data-k="text">${esc(r.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeReview(${i})">REMOVE</button></div>`).join('');
-  document.querySelectorAll('[data-review]').forEach(e=>e.oninput=()=>cfg.reviews[Number(e.dataset.review)][e.dataset.k]=e.value);
-}
-function renderAll(){refreshCategoryFilter();renderProducts();renderCategories();renderContent();renderBusiness();renderAppearance();renderGallery();renderReviews()}
-async function connect(){
-  try{
-    msg('Loading current GitHub files…');
-    const [p,s]=await Promise.all([getFile('products.json'),getFile('site.json')]);
-    products=Array.isArray(p.json)?p.json:p.json.products||[];
-    products=products.map(normalizeProduct);
-    cfg=s.json||{};cfg.categories=cfg.categories||[];cfg.subcategories=cfg.subcategories||[];cfg.makes=cfg.makes||[];cfg.websiteSections=cfg.websiteSections||{};cfg.services=cfg.services||[];cfg.whyItems=cfg.whyItems||[];cfg.gallery=cfg.gallery||[];cfg.reviews=cfg.reviews||[];cfg.links=cfg.links||{};cfg.appearance=cfg.appearance||{};
-    $('app').classList.remove('hidden');renderAll();
-    sessionStorage.setItem('cc_owner',$('owner').value);sessionStorage.setItem('cc_repo',$('repo').value);sessionStorage.setItem('cc_branch',$('branch').value);
-    msg(`Connected. Loaded ${products.length} products from the current repository.`,true);
-  }catch(e){msg('ERROR: '+e.message)}
-}
-async function saveProducts(){
-  try{
-    products=products.map(normalizeProduct);
-    await putFile('products.json',products,'Update Customcarz product catalogue');
-    renderProducts();msg('Products saved successfully. Customer site will use the updated catalogue after deployment.',true);
-  }catch(e){msg('ERROR saving products: '+e.message)}
-}
-async function deleteProduct(i){
-  const p=products[i];if(!p)return;
-  if(!confirm(`Delete "${p.name}" from the customer website?`))return;
-  try{
-    const image=relPath(p.image);
-    products.splice(i,1);
-    await putFile('products.json',products,`Delete product: ${p.name}`);
-    if(image&&image.startsWith('assets/products/')){try{await deleteFile(image,`Delete product image: ${p.name}`)}catch(e){console.warn('Image cleanup failed',e)}}
-    renderAll();msg(`Deleted "${p.name}" from products.json.`,true);
-  }catch(e){msg('DELETE FAILED — product was not safely removed: '+e.message);await connect()}
-}
-async function uploadPhoto(i){
-  try{
-    const input=document.querySelector(`[data-file="${i}"]`),f=input?.files?.[0];if(!f)throw Error('Choose a photo first');
-    if(f.size>15*1024*1024)throw Error('Photo is larger than 15 MB. Please use a smaller image.');
-    const ext=(f.name.split('.').pop()||'jpg').toLowerCase().replace(/[^a-z0-9]/g,'')||'jpg';
-    const path=`assets/products/customcarz-${Date.now()}-${Math.random().toString(36).slice(2,7)}.${ext}`;
-    const reader=new FileReader();const data=await new Promise((res,rej)=>{reader.onload=()=>res(String(reader.result).split(',')[1]);reader.onerror=rej;reader.readAsDataURL(f)});
-    let saved=null;
-    for(let attempt=0;attempt<5;attempt++){
-      try{saved=await api(path,{method:'PUT',body:JSON.stringify({message:`Upload product photo: ${products[i].name}`,content:data,branch:$('branch').value.trim()})});break}
-      catch(e){if(/409|does not match|sha/i.test(String(e.message))&&attempt<4){await new Promise(r=>setTimeout(r,500*(attempt+1)));continue}throw e}
-    }
-    products[i].image=path;
-    await saveProducts();
-    msg(`Photo uploaded and saved as ${path}.`,true);
-  }catch(e){msg('PHOTO UPLOAD FAILED: '+e.message)}
-}
-function sortProducts(){products.sort((a,b)=>{const ao=Number(a.displayOrder)||999999,bo=Number(b.displayOrder)||999999;return ao-bo||String(a.name||'').localeCompare(String(b.name||''))});renderProducts()}
-function showTab(name){document.querySelectorAll('.panel').forEach(p=>p.classList.add('hidden'));$('panel-'+name).classList.remove('hidden');document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));window.scrollTo({top:0,behavior:'smooth'})}
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
-$('connect').onclick=connect;$('reload').onclick=connect;$('clearSession').onclick=()=>{sessionStorage.clear();$('token').value='';msg('Session cleared')};
-$('search').oninput=renderProducts;$('filterCategory').onchange=renderProducts;$('sortOrder').onclick=sortProducts;
-$('saveProducts').onclick=saveProducts;$('addProduct').onclick=()=>{products.unshift({id:Date.now(),name:'New Product',price:0,oldPrice:0,stock:0,image:'',category:uniqueCategories()[0]||'Car Accessories',subcat:'',make:'Universal',model:'All',year:'All',description:'',fitment:'',warranty:'',featured:false,bestSelling:false,mustHave:false,newArrival:true,displayOrder:1});renderProducts()};
-$('saveCategories').onclick=async()=>{try{cfg.categories=$('categoryList').value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);cfg.subcategories=$('subcategoryList').value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);await putFile('site.json',cfg,'Update Customcarz categories');renderAll();msg('Categories saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('normalizeCategories').onclick=()=>{const clean=a=>[...new Map(a.map(x=>[String(x).trim().toLowerCase(),String(x).trim()]).filter(x=>x[1])).values()];cfg.categories=clean(cfg.categories||[]);cfg.subcategories=clean(cfg.subcategories||[]);renderCategories();msg('Spacing cleaned locally. Press SAVE CATEGORIES to publish.',true)};
+function renderReviews(){$('reviews').innerHTML=(cfg.reviews||[]).map((r,i)=>`<div class="repeat"><div class="grid2"><div><label>Name</label><input data-review="${i}" data-k="name" value="${esc(r.name||'')}"></div><div><label>Review</label><textarea data-review="${i}" data-k="text">${esc(r.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeReview(${i})">REMOVE</button></div>`).join('')||'<div class="notice">No reviews yet.</div>';document.querySelectorAll('[data-review]').forEach(e=>e.oninput=()=>cfg.reviews[+e.dataset.review][e.dataset.k]=e.value)}
+function renderContent(){const defs=cfg.websiteSections||{};$('sectionEditors').innerHTML=Object.entries(defs).map(([key,obj])=>`<div class="section"><h3>${esc(key)}</h3><div class="grid2">${Object.entries(obj||{}).map(([k,v])=>`<div><label>${esc(k)}</label><textarea data-sec="${esc(key)}" data-key="${esc(k)}">${esc(v)}</textarea></div>`).join('')}</div></div>`).join('');$('services').innerHTML=(cfg.services||[]).map((s,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-service="${i}" data-k="title" value="${esc(s.title||'')}"></div><div><label>Description</label><textarea data-service="${i}" data-k="text">${esc(s.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeService(${i})">REMOVE</button></div>`).join('');$('whyItems').innerHTML=(cfg.whyItems||[]).map((s,i)=>`<div class="repeat"><div class="grid2"><div><label>Title</label><input data-why="${i}" data-k="title" value="${esc(s.title||'')}"></div><div><label>Description</label><textarea data-why="${i}" data-k="text">${esc(s.text||'')}</textarea></div></div><button class="btn red mini" onclick="removeWhy(${i})">REMOVE</button></div>`).join('');document.querySelectorAll('[data-sec]').forEach(e=>e.oninput=()=>cfg.websiteSections[e.dataset.sec][e.dataset.key]=e.value);document.querySelectorAll('[data-service]').forEach(e=>e.oninput=()=>cfg.services[+e.dataset.service][e.dataset.k]=e.value);document.querySelectorAll('[data-why]').forEach(e=>e.oninput=()=>cfg.whyItems[+e.dataset.why][e.dataset.k]=e.value)}
+function renderBusiness(){const keys=[['bizName','Business name'],['tagline','Tagline'],['description','Description'],['mission','Mission'],['vision','Vision'],['phone','Phone'],['email','Email'],['location','Location'],['hours','Opening hours'],['till','Till / payment'],['googleBusiness','Google Business URL'],['googleReviewsUrl','Google Reviews URL']];$('businessFields').innerHTML=keys.map(([k,l])=>`<div><label>${l}</label><textarea data-biz="${k}">${esc(cfg[k]||'')}</textarea></div>`).join('');document.querySelectorAll('[data-biz]').forEach(e=>e.oninput=()=>cfg[e.dataset.biz]=e.value);const links=cfg.links||{};const ks=['phone','whatsapp','instagram','facebook','tiktok','x','youtube','pinterest','maps','jiji','email'];$('socialFields').innerHTML=ks.map(k=>`<div><label>${k}</label><input data-link="${k}" value="${esc(links[k]||'')}"></div>`).join('');document.querySelectorAll('[data-link]').forEach(e=>e.oninput=()=>{cfg.links=cfg.links||{};cfg.links[e.dataset.link]=e.value});$('makes').value=(cfg.makes||[]).join('\n');$('textOverrides').value=JSON.stringify(cfg.textOverrides||{},null,2);const a=cfg.appearance||{};$('bgPosition').value=a.backgroundPosition||'center top';$('bgSize').value=a.backgroundSize||'cover';$('overlayOpacity').value=a.overlayOpacity??0;$('overlayColor').value=a.overlayColor||'rgba(0,0,0,0)';$('contrast').value=a.contrast??2;$('saturation').value=a.saturation??1;$('brightness').value=a.brightness??1}
+function renderAll(){refreshCategoryFilter();renderProducts();renderCategories();renderMedia();renderReviews();renderContent();renderBusiness()}
+async function connect(){try{msg('Loading products.json and site.json…');const [p,s]=await Promise.all([getFile('products.json'),getFile('site.json')]);products=(Array.isArray(p)?p:p.products||[]).map(normalizeProduct);cfg=s||{};cfg.categories=cleanList(cfg.categories);cfg.subcategories=cleanList(cfg.subcategories);cfg.makes=cleanList(cfg.makes);cfg.gallery=Array.isArray(cfg.gallery)?cfg.gallery:[];cfg.reviews=Array.isArray(cfg.reviews)?cfg.reviews:[];cfg.links=cfg.links||{};cfg.appearance=cfg.appearance||{};cfg.categoryImages=cfg.categoryImages||{};cfg.websiteSections=cfg.websiteSections||{};cfg.services=Array.isArray(cfg.services)?cfg.services:[];cfg.whyItems=Array.isArray(cfg.whyItems)?cfg.whyItems:[];$('app').classList.remove('hidden');renderAll();msg(`Connected — ${products.length} products loaded from ${$('owner').value}/${$('repo').value}.`,true)}catch(e){msg('ERROR: '+e.message)}}
+async function saveProducts(){try{products=products.map(normalizeProduct);products.forEach((p,i)=>p.displayOrder=i+1);await putFile('products.json',products,'Update Customcarz catalogue');renderProducts();msg('Products saved. Display order and relative image paths are now stored.',true)}catch(e){msg('ERROR saving products: '+e.message)}}
+window.deleteProduct=async i=>{const p=products[i];if(!p)return;if(!confirm(`Delete "${p.name}" permanently from the catalogue?`))return;try{const old=relPath(p.image);products.splice(i,1);products.forEach((x,n)=>x.displayOrder=n+1);await putFile('products.json',products,`Delete product: ${p.name}`);if(old.startsWith('assets/products/'))try{await deleteFile(old,`Delete product image: ${p.name}`)}catch(e){}renderAll();msg(`Deleted "${p.name}" from products.json and customer catalogue.`,true)}catch(e){msg('DELETE FAILED: '+e.message);await connect()}}
+window.uploadProductPhoto=async i=>{try{const f=document.querySelector(`[data-file="${i}"]`)?.files?.[0];if(!f)throw Error('Choose a photo first');const old=relPath(products[i].image),ext='jpg',path=`assets/products/customcarz-${Date.now()}-${i}.${ext}`;await uploadImage(path,f,`Upload product photo: ${products[i].name}`);products[i].image=path;await saveProducts();if(old.startsWith('assets/products/')&&old!==path)try{await deleteFile(old,`Remove old product photo: ${products[i].name}`)}catch(e){}msg('Product photo uploaded and linked using a relative assets/products path.',true);renderProducts()}catch(e){msg('PHOTO UPLOAD FAILED: '+e.message)}}
+window.addSub=cat=>{const s=prompt(`New subcategory under ${cat}`);if(!s)return;MASTER[cat]=cleanList([...(MASTER[cat]||[]),s]);renderCategories()}
+$('addProduct').onclick=()=>{products.push({id:Date.now(),name:'New Product',price:0,stock:0,image:'',category:Object.keys(MASTER)[0],subcat:MASTER[Object.keys(MASTER)[0]][0],make:'Universal',model:'All',year:'All',description:'',fitment:'Universal',warranty:'',featured:false,bestSelling:false,mustHave:false,newArrival:true,displayOrder:products.length+1});renderProducts();window.scrollTo({top:0,behavior:'smooth'})};
+$('saveProducts').onclick=saveProducts;$('search').oninput=renderProducts;$('filterCategory').onchange=renderProducts;
+$('saveCategories').onclick=async()=>{try{cfg.categories=Object.keys(MASTER);cfg.subcategories=cleanList(Object.values(MASTER).flat());cfg.subcategoryMap=MASTER;cfg.categoryImages=Object.assign({},cfg.categoryImages||{},CATEGORY_IMAGES);await putFile('site.json',cfg,'Repair and save Customcarz category structure');renderAll();msg('Main categories, subcategories and category images saved.',true)}catch(e){msg('ERROR: '+e.message)}};
+$('resetCategoryStructure').onclick=()=>{if(confirm('Restore the master category/subcategory list in the editor?')){Object.keys(MASTER).forEach(k=>MASTER[k]=cleanList(MASTER[k]));renderCategories();msg('Master list restored locally. Press SAVE CATEGORY STRUCTURE to publish.',true)}};
+$('repair').onclick=async()=>{try{cfg.categories=Object.keys(MASTER);cfg.subcategories=cleanList(Object.values(MASTER).flat());cfg.subcategoryMap=MASTER;cfg.categoryImages=Object.assign({},cfg.categoryImages||{},CATEGORY_IMAGES);cfg.categories.forEach(c=>{cfg.categoryImages[c]=cfg.categoryImages[c]||CATEGORY_IMAGES[c]||''});await putFile('site.json',cfg,'Repair Customcarz catalogue categories and media map');products=products.map(normalizeProduct);products.forEach((p,i)=>p.displayOrder=i+1);await putFile('products.json',products,'Normalize Customcarz product display order and image paths');renderAll();msg('REPAIR COMPLETE — category structure, media map and product display order repaired.',true)}catch(e){msg('REPAIR FAILED: '+e.message)}};
+$('uploadBg').onclick=async()=>{try{const f=$('bgFile').files?.[0];if(!f)throw Error('Choose a background image');const path=`assets/background-customcarz-${Date.now()}.jpg`;await uploadImage(path,f,'Upload Customcarz website background');cfg.appearance=cfg.appearance||{};const old=relPath(cfg.appearance.background||'');cfg.appearance.background=path;await putFile('site.json',cfg,'Update Customcarz website background');if(old.startsWith('assets/background-')&&old!==path)try{await deleteFile(old,'Remove old Customcarz background')}catch(e){}renderMedia();msg('Background replaced and saved.',true)}catch(e){msg('BACKGROUND UPLOAD FAILED: '+e.message)}};
+window.uploadCategoryPhoto=async cat=>{try{const f=document.querySelector(`[data-catfile="${CSS.escape(cat)}"]`)?.files?.[0];if(!f)throw Error('Choose a category image');const path=`assets/category/${cat.toLowerCase().replace(/[^a-z0-9]+/g,'-')}-${Date.now()}.jpg`;await uploadImage(path,f,`Replace category image: ${cat}`);cfg.categoryImages=cfg.categoryImages||{};cfg.categoryImages[cat]=path;await putFile('site.json',cfg,`Update category image: ${cat}`);renderMedia();msg(`${cat} image replaced.`,true)}catch(e){msg('CATEGORY PHOTO FAILED: '+e.message)}};
+window.uploadGalleryPhoto=async i=>{try{const f=document.querySelector(`[data-galleryfile="${i}"]`)?.files?.[0];if(!f)throw Error('Choose a gallery image');const path=`assets/gallery/customcarz-${Date.now()}-${i}.jpg`;await uploadImage(path,f,`Replace gallery photo ${i+1}`);const old=relPath(cfg.gallery[i].image||'');cfg.gallery[i].image=path;await putFile('site.json',cfg,'Update Customcarz gallery photo');if(old.startsWith('assets/gallery/')&&old!==path)try{await deleteFile(old,'Remove old gallery photo')}catch(e){}renderMedia();msg('Gallery photo replaced.',true)}catch(e){msg('GALLERY PHOTO FAILED: '+e.message)}};
+$('addGallery').onclick=()=>{cfg.gallery.push({title:'New gallery photo',image:''});renderMedia()};window.removeGallery=i=>{cfg.gallery.splice(i,1);renderMedia()};$('saveGallery').onclick=async()=>{try{await putFile('site.json',cfg,'Save Customcarz gallery');msg('Gallery saved.',true)}catch(e){msg('ERROR: '+e.message)}};
+$('addReview').onclick=()=>{cfg.reviews.push({name:'Customer',text:''});renderReviews()};window.removeReview=i=>{cfg.reviews.splice(i,1);renderReviews()};$('saveReviews').onclick=async()=>{try{cfg.reviews=cfg.reviews.filter(r=>r&&String(r.text||'').trim());await putFile('site.json',cfg,'Update Customcarz customer reviews');msg(`Saved ${cfg.reviews.length} reviews. Customer site is configured to display all saved reviews.`,true)}catch(e){msg('ERROR: '+e.message)}};
 $('saveContent').onclick=async()=>{try{await putFile('site.json',cfg,'Update Customcarz website content');msg('Website content saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('addService').onclick=()=>{cfg.services.push({title:'New service',text:''});renderContent()};window.removeService=i=>{cfg.services.splice(i,1);renderContent()};
-$('addWhy').onclick=()=>{cfg.whyItems.push({title:'New benefit',text:''});renderContent()};window.removeWhy=i=>{cfg.whyItems.splice(i,1);renderContent()};
-$('saveBusiness').onclick=async()=>{try{cfg.makes=$('makes').value.split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);try{cfg.textOverrides=JSON.parse($('textOverrides').value||'{}')}catch(e){throw Error('Other site text overrides must be valid JSON.')}await putFile('site.json',cfg,'Update Customcarz business information');msg('Business information saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('saveAppearance').onclick=async()=>{try{cfg.appearance=cfg.appearance||{};cfg.appearance.background=relPath($('bgPath').value);cfg.appearance.backgroundPosition=$('bgPosition').value;cfg.appearance.backgroundSize=$('bgSize').value;cfg.appearance.overlayOpacity=Math.max(0,Math.min(1,Number($('overlayOpacity').value)));cfg.appearance.contrast=Math.max(1,Math.min(5,Number($('contrast').value)));cfg.appearance.saturation=Math.max(.5,Math.min(3,Number($('saturation').value)));cfg.appearance.brightness=Math.max(.4,Math.min(2,Number($('brightness').value)));cfg.appearance.overlayColor=$('overlayColor').value;await putFile('site.json',cfg,'Update Customcarz social and appearance');msg('Social and appearance saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('saveMedia').onclick=async()=>{try{await putFile('site.json',cfg,'Update Customcarz gallery');msg('Gallery saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('addGallery').onclick=()=>{cfg.gallery.push({title:'New gallery photo',image:''});renderGallery()};window.removeGallery=i=>{cfg.gallery.splice(i,1);renderGallery()};
-$('saveReviews').onclick=async()=>{try{await putFile('site.json',cfg,'Update Customcarz reviews');msg('Reviews saved.',true)}catch(e){msg('ERROR: '+e.message)}};
-$('addReview').onclick=()=>{cfg.reviews.push({name:'Customer',text:''});renderReviews()};window.removeReview=i=>{cfg.reviews.splice(i,1);renderReviews()};
-
-const savedOwner=sessionStorage.getItem('cc_owner'),savedRepo=sessionStorage.getItem('cc_repo'),savedBranch=sessionStorage.getItem('cc_branch');
-if(savedOwner)$('owner').value=savedOwner;if(savedRepo)$('repo').value=savedRepo;if(savedBranch)$('branch').value=savedBranch;
+$('addService').onclick=()=>{cfg.services.push({title:'New service',text:''});renderContent()};window.removeService=i=>{cfg.services.splice(i,1);renderContent()};$('addWhy').onclick=()=>{cfg.whyItems.push({title:'New benefit',text:''});renderContent()};window.removeWhy=i=>{cfg.whyItems.splice(i,1);renderContent()};
+$('saveBusiness').onclick=async()=>{try{cfg.makes=$('makes').value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);cfg.textOverrides=JSON.parse($('textOverrides').value||'{}');cfg.appearance=cfg.appearance||{};cfg.appearance.backgroundPosition=$('bgPosition').value;cfg.appearance.backgroundSize=$('bgSize').value;cfg.appearance.overlayOpacity=Number($('overlayOpacity').value)||0;cfg.appearance.overlayColor=$('overlayColor').value;cfg.appearance.contrast=Number($('contrast').value)||2;cfg.appearance.saturation=Number($('saturation').value)||1;cfg.appearance.brightness=Number($('brightness').value)||1;await putFile('site.json',cfg,'Update Customcarz business social and appearance');msg('Business, social and appearance saved.',true)}catch(e){msg('ERROR: '+e.message)}};
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.panel').forEach(p=>p.classList.add('hidden'));$('panel-'+b.dataset.tab).classList.remove('hidden');document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));window.scrollTo({top:0,behavior:'smooth'})});
+$('connect').onclick=connect;$('reload').onclick=connect;$('clear').onclick=()=>{sessionStorage.clear();$('token').value='';$('app').classList.add('hidden');msg('Session cleared')};
 </script>
-</body>
-</html>
+</body></html>

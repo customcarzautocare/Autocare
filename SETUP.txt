@@ -1,0 +1,24 @@
+CUSTOMCARZ AUTO CARE — ADMIN V2 SETUP
+
+1. Replace the repository's current admin.html with admin-v2.html (rename it to admin.html).
+2. Upload customer-fix.js to the repository root.
+3. In index.html, add this line immediately before </body>:
+   <script src="customer-fix.js"></script>
+4. Open admin.html.
+5. Connect using:
+   Owner: customcarzautocare
+   Repository: Autocare
+   Branch: main
+   Token: a fine-grained GitHub token with Contents: Read and write.
+6. Press REPAIR CATALOGUE STRUCTURE once, then SAVE/RELOAD.
+7. Use Products & Sorting to drag products into the order you want and press SAVE PRODUCTS.
+8. Use All Website Photos to replace the background, category photos and gallery photos.
+9. Use Reviews to add/edit/remove reviews and SAVE ALL REVIEWS.
+
+IMPORTANT:
+- Product images are saved as relative paths under assets/products/.
+- Category images are saved under assets/category/.
+- Gallery images are saved under assets/gallery/.
+- The customer site bridge reads site.json and products.json from this same Autocare repository.
+- The bridge also makes Shop by Category work with the repaired main categories and shows all saved reviews.
+- Do not paste your GitHub token into the files.
