@@ -209,13 +209,13 @@
   },
   "appearance": {
     "background": "assets/products/1786634551969.jpg",
-    "backgroundPosition": "center top",
+    "backgroundPosition": "center top bottom ",
     "backgroundSize": "100% auto",
-    "overlayOpacity": 0.8,
+    "overlayOpacity": 0.5,
     "contrast": 5,
     "saturation": 2.35,
     "brightness": 2,
-    "overlayColor": "rgba(0,0,0,0)"
+    "overlayColor": "rgba(1,0,0,0)"
   },
   "textOverrides": {
     "footerRights": "@customcarzautocare.co.ke "
