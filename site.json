@@ -1,12 +1,12 @@
 {
   "bizName": "Customcarz Auto Care",
-  "tagline": "Nairobi's one-stop shop for car accessories, body parts and lighting",
+  "tagline": "Nairobi's one-stop shop for car accessories, Ambient lights, body parts and lighting parts",
   "description": "Customcarz Auto Care has served car owners, mechanics, garages and dealers from Nairobi CBD since 2020, stocking new imports from China and genuine ex-Japan spare parts, with installation services in tinting, wraps, lighting and vehicle electronics.",
   "vision": "To be one of Kenya’s most trusted destinations for car accessories, spare parts, styling, lighting and vehicle technology.",
   "phone": "0757555691",
   "email": "customcarzautocare@gmail.com",
-  "location": "Shell, Kirinyaga Road, Nairobi CBD. Near modern coast booking office. ",
-  "hours": "Open daily from 7:00 Am - 5:30 pm",
+  "location": "📍 Shell, Kirinyaga Road, Nairobi CBD. Near modern coast booking office. ",
+  "hours": "⏰ Open daily from 7:00 Am - 5:30 pm",
   "till": "3111732",
   "googleBusiness": "https://www.google.com/maps/dir/?api=1&destination=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&travelmode=driving",
   "categories": [
@@ -16,18 +16,7 @@
     "Seat cover / car floor mats\\ Chameleon Tint\\ 3M Tint\\ Llumar Tint\\nCeramic Tint\\nHeadlight Projectors\\nDRL Customisation\\nCar Wraps\\Paint Protection Film (PPF)\\nAndroid Radios\\nCar Alarms\\nGPS Trackers\\nDashcams\\ dashboard covers / steering wheel cover / taillight lens/ interior Ambient light / wheel accessories /spoiler / bumper / wings /fender / windscreen /side mirror cover side mirror glass /perfume & airfreshener /dashboard polish / detailing products / restoration products"
   ],
   "makes": [
-    "Toyota",
-    "Nissan",
-    "Honda",
-    "Mazda",
-    "Subaru",
-    "Mercedes-Benz",
-    "BMW",
-    "Audi",
-    "Volkswagen",
-    "Ford",
-    "Hyundai",
-    "Lexus"
+    "Toyota\\nNissan\\nHonda\\nMazda\\nSubaru\\nMercedes-Benz\\nBMW\\nAudi\\nVolkswagen\\nFord\\nHyundai\\nLexus"
   ],
   "websiteSections": {
     "hero": {
