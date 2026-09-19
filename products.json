@@ -1,5 +1,25 @@
 [
   {
+    "id": 1789830549341,
+    "name": "",
+    "price": 0,
+    "oldPrice": 0,
+    "stock": 0,
+    "image": "assets/products/custom-1789830609562-0.jpg",
+    "category": "Car Accessories",
+    "subcat": "",
+    "make": "Universal",
+    "model": "All",
+    "year": "All",
+    "description": "",
+    "fitment": "",
+    "warranty": "",
+    "featured": false,
+    "bestSelling": false,
+    "mustHave": false,
+    "newArrival": true
+  },
+  {
     "id": 1789662366476,
     "name": "Car mats mistubishi",
     "price": 3000,
