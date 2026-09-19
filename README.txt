@@ -1,10 +1,12 @@
-CUSTOMCARZ — CATEGORY-ONLY RESTORE
+CATEGORY FUNCTION FIX ONLY
 
-This package changes ONLY:
-- site.json: fixes categories/subcategories into real separate arrays and cleans category image mappings.
-- admin.html: adds a safe Shop by Categories manager for add/rename/remove.
+This index.html fixes Shop by Categories click/filter behavior.
+Do NOT replace products.json or assets.
+Use the existing site.json and products.json.
 
-DO NOT replace index.html, products.json, or the assets folder with this package.
-Your existing products.json and assets are intentionally NOT included.
-
-Before uploading, keep a backup of the current repository.
+Changes:
+- category cards always render
+- clicking a category filters matching products
+- category matching supports category/subcategory/name aliases
+- category product counts use the same matching logic
+- no product records are modified
