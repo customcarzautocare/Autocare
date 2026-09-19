@@ -9,9 +9,7 @@
   "hours": "⏰ Open daily from 7:00 Am - 5:30 pm",
   "till": "Buy goods Till number 3111732\nSend money via mpesa 0757555691 ",
   "googleBusiness": "https://www.google.com/maps/dir/?api=1&destination=Customcarz+Auto+Care%2C+Shell%2C+Kirinyaga+Road%2C+Nairobi%2C+Kenya&travelmode=driving",
-  "categories": [
-    "Body Parts\\nLighting Parts\\nAmbient lights\\nInterior Accessories\\nExterior Accessories\\nDecor & Customization\\nElectronics & Infotainment\\nLighting Parts\\nCleaning & Maintenance\\nSafety & Emergency/Ambient lights /our services"
-  ],
+  "categories": [],
   "subcategories": [
     "Seat cover / car floor mats\\ Chameleon Tint\\ 3M Tint\\ Llumar Tint\\nCeramic Tint\\nHeadlight Projectors\\nDRL Customisation\\nCar Wraps\\Paint Protection Film (PPF)\\nAndroid Audio Systems\nCameras & Monitoring\nSecurity Systems, \nNavigation & SensorsRadios\\nCar Alarms\\nGPS Trackers\\nDashcams\\ dashboard covers / steering wheel cover / taillight lens/ interior Ambient light / wheel accessories /spoiler / bumper / wings /fender / windscreen /side mirror cover side mirror glass /perfume & airfreshener /dashboard polish / detailing products / restoration products"
   ],
@@ -231,10 +229,10 @@
     "background": "assets/background-customcarz-1789665386441.jpg",
     "backgroundPosition": "center top bottom ",
     "backgroundSize": "100% auto",
-    "overlayOpacity": 0.5,
-    "contrast": 5,
-    "saturation": 2.35,
-    "brightness": 2,
+    "overlayOpacity": 0.8,
+    "contrast": 1,
+    "saturation": 0.5,
+    "brightness": 1,
     "overlayColor": "rgba(1,0,0,0)"
   },
   "textOverrides": {
