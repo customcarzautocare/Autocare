@@ -1,14 +1,7 @@
-CUSTOMCARZ AUTO CARE — CLEAN RESTORE PACKAGE
+CUSTOMCARZ EXACT RESTORE — PRESERVE YOUR 82 PRODUCTS
 
-This package restores the working customer-site structure and the floating contact buttons.
-It fixes the category data without redesigning the customer website.
+This package restores the known-good customer-site layout and admin from the pre-break v14 build. It fixes ONLY the category structure/rendering and points the customer site to local products.json/site.json.
 
-IMPORTANT:
-- Keep your existing assets/ folder in the GitHub repository.
-- Upload/replace these root files only: index.html, admin.html, products.json, site.json.
-- Do NOT delete assets/products, assets/category, assets/gallery or background images.
-- The customer site reads products.json and site.json beside index.html.
-- Categories are stored as separate clean entries, not one long string.
-- The aggressive contrast/saturation filters from the broken rebuild have been removed.
+IMPORTANT: DO NOT replace or delete your current products.json. Your repository currently contains 82 catalogue products (displayOrder 1–82). Keep that exact file. Keep the entire assets/ folder and CNAME. Replace only index.html, admin.html and site.json.
 
-If your GitHub repository already contains newer products.json, keep that newer products.json instead of overwriting it with this package's copy.
+The ZIP deliberately does not include products.json so the 82 current products cannot be accidentally overwritten.
