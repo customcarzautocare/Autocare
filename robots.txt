@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /admin.html
 
-Sitemap: https://customcarzautocare.co.ke/sitemap.xml 
+Sitemap: https://customcarzautocare.co.ke/sitemap.xml
